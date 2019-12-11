@@ -53,12 +53,16 @@ class Serie(models.Model):
     release = models.DateField(default='2000-01-01',
                                verbose_name="Date de parution")
 
-    categorie = models.ManyToManyField(Categorie)
-
     nationalite = models.ForeignKey(Nationalite,
                                     default=None,
                                     null=True,
                                     on_delete=models.SET_NULL)
+
+    categorie = models.ManyToManyField(Categorie)
+
+    photo = models.ImageField(blank=True,
+                              null=True,
+                              upload_to="covers/doriansmomnudes")
 
     def __str__(self):
         result = self.title
