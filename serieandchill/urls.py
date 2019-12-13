@@ -17,16 +17,17 @@ from django.conf.urls import url
 from django.conf.urls.i18n import i18n_patterns
 from django.contrib import admin
 from django.urls import path
-
 from django.conf.urls.static import static
 from django.conf import settings
 
 from app.views.index import IndexView
+from app.views.categorie import CategorieView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
 ]
 
 urlpatterns += i18n_patterns(
-    url(r'^$', IndexView.as_view(), name='app_index'),
+    path(r'', IndexView.as_view(), name='app_index'),
+    path('categorie', CategorieView.as_view(), name='app_serie_categorie')
 ) + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -9,5 +9,5 @@ class IndexView(ListView):
 
     def get_context_data(self, **kwargs):
         result = super().get_context_data(**kwargs)
-        result['title'] = 'Serie à voir'
+        # result['title'] = 'Serie à voir'
         return result

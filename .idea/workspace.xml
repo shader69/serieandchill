@@ -2,15 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c6eff261-b4a8-4c4b-8f37-e7227a98a020" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/views/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/index.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/categorie.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/index.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/index.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/categorie.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/serieandchill/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/serieandchill/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/locale/en/LC_MESSAGES/django.po" beforeDir="false" afterPath="$PROJECT_DIR$/locale/en/LC_MESSAGES/django.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/locale/fr/LC_MESSAGES/django.mo" beforeDir="false" afterPath="$PROJECT_DIR$/locale/fr/LC_MESSAGES/django.mo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/locale/fr/LC_MESSAGES/django.po" beforeDir="false" afterPath="$PROJECT_DIR$/locale/fr/LC_MESSAGES/django.po" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/serieandchill/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/serieandchill/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/heroic-features.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/heroic-features.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
     </list>
@@ -65,8 +67,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="725">
-              <caret line="71" lean-forward="true" selection-start-line="71" selection-end-line="71" />
+            <state relative-caret-position="450">
+              <caret line="30" column="45" lean-forward="true" selection-start-line="30" selection-start-column="45" selection-end-line="30" selection-end-column="45" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -74,29 +76,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="33" lean-forward="true" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/css/heroic-features.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="24" lean-forward="true" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/locale/fr/LC_MESSAGES/django.po">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="750">
-              <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
+            <state relative-caret-position="570">
+              <caret line="38" column="19" selection-start-line="38" selection-start-column="19" selection-end-line="38" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/categorie.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" column="88" selection-start-line="18" selection-start-column="88" selection-end-line="18" selection-end-column="88" />
+              <folding>
+                <element signature="e#0#31#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -104,8 +100,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="42" column="42" selection-start-line="42" selection-start-column="42" selection-end-line="42" selection-end-column="42" />
+            <state relative-caret-position="315">
+              <caret line="36" selection-start-line="36" selection-end-line="36" selection-end-column="101" />
               <folding>
                 <element signature="n#style#0;n#a#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -114,24 +110,42 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/serieandchill/urls.py">
+        <entry file="file://$PROJECT_DIR$/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+            <state relative-caret-position="225">
+              <caret line="15" selection-start-line="15" selection-end-line="32" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/categorie.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="23" column="32" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
               <folding>
-                <element signature="e#637#669#0" expanded="true" />
+                <element signature="e#278#325#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views.py">
+        <entry file="file://$PROJECT_DIR$/serieandchill/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="32" lean-forward="true" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+            <state relative-caret-position="270">
+              <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/index.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="9" lean-forward="true" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
               <folding>
-                <element signature="e#0#35#0" expanded="true" />
+                <element signature="e#0#41#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -158,14 +172,18 @@
         <option value="$PROJECT_DIR$/templates/navbar.html" />
         <option value="$PROJECT_DIR$/app/models.py" />
         <option value="$PROJECT_DIR$/app/views/views.py" />
-        <option value="$PROJECT_DIR$/app/views/index.py" />
-        <option value="$PROJECT_DIR$/serieandchill/urls.py" />
         <option value="$PROJECT_DIR$/serieandchill/settings.py" />
-        <option value="$PROJECT_DIR$/locale/fr/LC_MESSAGES/django.po" />
-        <option value="$PROJECT_DIR$/templates/index.html" />
-        <option value="$PROJECT_DIR$/app/views.py" />
-        <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$PROJECT_DIR$/static/css/heroic-features.css" />
+        <option value="$PROJECT_DIR$/templates/admin/index.html" />
+        <option value="$PROJECT_DIR$/templates/index.html" />
+        <option value="$PROJECT_DIR$/templates/categories.html" />
+        <option value="$PROJECT_DIR$/app/views.py" />
+        <option value="$PROJECT_DIR$/locale/fr/LC_MESSAGES/django.po" />
+        <option value="$PROJECT_DIR$/templates/base.html" />
+        <option value="$PROJECT_DIR$/serieandchill/urls.py" />
+        <option value="$PROJECT_DIR$/app/views/index.py" />
+        <option value="$PROJECT_DIR$/app/views/categorie.py" />
+        <option value="$PROJECT_DIR$/templates/categorie.html" />
       </list>
     </option>
   </component>
@@ -198,31 +216,18 @@
             <path>
               <item name="serieandchill" type="b2602c69:ProjectViewProjectNode" />
               <item name="serieandchill" type="462c0819:PsiDirectoryNode" />
-              <item name="locale" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="serieandchill" type="b2602c69:ProjectViewProjectNode" />
               <item name="serieandchill" type="462c0819:PsiDirectoryNode" />
-              <item name="locale" type="462c0819:PsiDirectoryNode" />
-              <item name="fr" type="462c0819:PsiDirectoryNode" />
+              <item name="serieandchill" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="serieandchill" type="b2602c69:ProjectViewProjectNode" />
               <item name="serieandchill" type="462c0819:PsiDirectoryNode" />
-              <item name="locale" type="462c0819:PsiDirectoryNode" />
-              <item name="fr" type="462c0819:PsiDirectoryNode" />
-              <item name="LC_MESSAGES" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="serieandchill" type="b2602c69:ProjectViewProjectNode" />
-              <item name="serieandchill" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="serieandchill" type="b2602c69:ProjectViewProjectNode" />
-              <item name="serieandchill" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -236,13 +241,16 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../lp_cocktails" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/templates" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/static" />
     </key>
@@ -298,7 +306,7 @@
       <workItem from="1576056482870" duration="1429000" />
       <workItem from="1576064509723" duration="7654000" />
       <workItem from="1576077285574" duration="696000" />
-      <workItem from="1576224986963" duration="9367000" />
+      <workItem from="1576224986963" duration="19315000" />
     </task>
     <task id="LOCAL-00001" summary="add imagefield">
       <created>1576077745582</created>
@@ -314,11 +322,18 @@
       <option name="project" value="LOCAL" />
       <updated>1576077887205</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add translation">
+      <created>1576243063845</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1576243063845</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19146000" />
+    <option name="totallyTimeSpent" value="29094000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -338,8 +353,8 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3298731" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.499388" visible="true" weight="0.25374857" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49877602" weight="0.25374857" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49877602" weight="0.39907727" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.499388" weight="0.3298731" />
@@ -347,7 +362,7 @@
       <window_info anchor="bottom" id="manage.py@serieandchill" order="8" weight="0.32871974" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.3298731" />
       <window_info anchor="bottom" id="Database Changes" order="10" weight="0.3298731" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.500612" side_tool="true" weight="0.32911393" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.501224" side_tool="true" weight="0.39907727" />
       <window_info anchor="bottom" id="Terminal" order="12" weight="0.3298731" />
       <window_info anchor="bottom" id="Python Console" order="13" weight="0.3298731" />
       <window_info anchor="bottom" id="Database Console" order="14" weight="0.3298731" />
@@ -364,7 +379,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add imagefield" />
     <MESSAGE value="add imagefield (2)" />
-    <option name="LAST_COMMIT_MESSAGE" value="add imagefield (2)" />
+    <MESSAGE value="add translation" />
+    <option name="LAST_COMMIT_MESSAGE" value="add translation" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/templates/README.md" />
@@ -378,22 +394,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/navbar.html" />
-    <entry file="file://$PROJECT_DIR$/app/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/tests.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/apps.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/covers/doriansmomnudes/olde-meme-6.png" />
     <entry file="das://4714a235-6c4f-431a-a86d-e6b523ee13b8/schema/main/table/app_serie">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
@@ -404,24 +404,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/views.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/locale/en/LC_MESSAGES/django.po">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/index.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" selection-start-line="5" selection-end-line="5" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/serieandchill/settings.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -433,64 +420,114 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/serieandchill/urls.py">
+    <entry file="file://$PROJECT_DIR$/templates/admin/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
-          <folding>
-            <element signature="e#637#669#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="255">
+          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../lp_cocktails/venv/lib/python3.6/site-packages/django/contrib/admin/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/heroic-features.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/views.py">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="32" lean-forward="true" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="120">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models.py">
+    <entry file="file://$PROJECT_DIR$/app/tests.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/apps.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/admin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="725">
-          <caret line="71" lean-forward="true" selection-start-line="71" selection-end-line="71" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
+        <state>
+          <caret column="29" selection-start-column="29" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/locale/fr/LC_MESSAGES/django.po">
+    <entry file="file://$PROJECT_DIR$/serieandchill/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="750">
-          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
+        <state relative-caret-position="270">
+          <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="42" column="42" selection-start-line="42" selection-start-column="42" selection-end-line="42" selection-end-column="42" />
+        <state relative-caret-position="315">
+          <caret line="36" selection-start-line="36" selection-end-line="36" selection-end-column="101" />
           <folding>
             <element signature="n#style#0;n#a#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/heroic-features.css">
+    <entry file="file://$PROJECT_DIR$/app/views/index.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="24" lean-forward="true" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+        <state relative-caret-position="165">
+          <caret line="11" column="9" lean-forward="true" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/locale/fr/LC_MESSAGES/django.po">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="38" column="19" selection-start-line="38" selection-start-column="19" selection-end-line="38" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
-          <caret line="15" column="33" lean-forward="true" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+          <caret line="15" selection-start-line="15" selection-end-line="32" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/categorie.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="88" selection-start-line="18" selection-start-column="88" selection-end-line="18" selection-end-column="88" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="45" lean-forward="true" selection-start-line="30" selection-start-column="45" selection-end-line="30" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/categorie.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="32" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
+          <folding>
+            <element signature="e#278#325#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
