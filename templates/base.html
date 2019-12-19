@@ -29,7 +29,7 @@
           <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item active">
-                <a class="nav-link" href="#">{% trans "Home" %}
+                <a class="nav-link" href="{% url 'app_index' %}">{% trans "Home" %}
                   <span class="sr-only">(current)</span>
                 </a>
               </li>
@@ -41,6 +41,12 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link log-btn" href="#">{% trans "Connexion" %}</a>
+              </li>
+              <li class="nav-item">
+                <form action="{% url 'app_serie_search' %}" method="get" autocomplete="off">
+                    <input type="text" id="search_title" name="q" placeholder="Rechercher..."/>
+                    <input type="submit" value="Rechercher" />
+                </form>
               </li>
             </ul>
           </div>

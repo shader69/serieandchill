@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{%  load static i18n %}
+
+{% block content %}
+  <!-- Page Content -->
+  <div class="container">
+
+    <!-- Page Features -->
+    <div class="row text-center">
+        {% for object in object_list %}
+{#            {% if object.title in request.GET.title %}#}
+                {% include "included/seriegrid.html" %}
+{#            {% endif %}#}
+        {% endfor %}
+    </div>
+    <!-- /.row -->
+
+  </div>
+  <!-- /.container -->
+
+{% endblock %}

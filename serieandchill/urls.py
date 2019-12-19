@@ -20,8 +20,12 @@ from django.urls import path
 from django.conf.urls.static import static
 from django.conf import settings
 
+from django.template import RequestContext, Template
+from django.http import HttpResponse
+
 from app.views.index import IndexView
 from app.views.categorie import CategorieView
+from app.views.search import SearchView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -29,5 +33,10 @@ urlpatterns = [
 
 urlpatterns += i18n_patterns(
     path(r'', IndexView.as_view(), name='app_index'),
-    path('categorie', CategorieView.as_view(), name='app_serie_categorie')
+
+    path('categorie/<str:cat>', CategorieView.as_view(), name='app_serie_categorie_title'),
+    path('categorie', CategorieView.as_view(), name='app_serie_categorie'),
+
+    path('search/<str:title>', SearchView.as_view(), name='app_serie_search_title'),
+    path('search', SearchView.as_view(), name='app_serie_search'),
 ) + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

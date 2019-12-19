@@ -58,7 +58,7 @@ class Serie(models.Model):
                                     null=True,
                                     on_delete=models.SET_NULL)
 
-    categorie = models.ManyToManyField(Categorie)
+    categories = models.ManyToManyField(Categorie)
 
     photo = models.ImageField(blank=True,
                               null=True,
