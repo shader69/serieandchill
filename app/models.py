@@ -62,10 +62,13 @@ class Serie(models.Model):
 
     photo = models.ImageField(blank=True,
                               null=True,
-                              upload_to="covers/doriansmomnudes")
+                              upload_to="covers")
 
     def __str__(self):
         result = self.title
         if self.description is not None:
             result += ' : ' + self.description[:80] + '...(voir la suite)'
         return result
+
+    def yearpublished(self):
+        return self.release.strftime('%Y')

@@ -1,10 +1,10 @@
 from django.views.generic import ListView
-
+from django.shortcuts import render, get_object_or_404
 from app.models import Serie, Categorie
 
 
 class CategorieView(ListView):
-    template_name = 'categorie.html'
+    template_name = 'category.html'
     model = Categorie
 
     def get_context_data(self, **kwargs):
