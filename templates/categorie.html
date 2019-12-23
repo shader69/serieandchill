@@ -5,18 +5,31 @@
   <!-- Page Content -->
   <div class="container">
 
+    <!-- Jumbotron Header -->
+    <header class="jumbotron my-4">
+      <h1 class="display-3">{% trans "Categories" %}</h1>
+        {% for object in categories %}
+{#            <a href="{% url 'app_serie_categorie_title' object.name %}">#}
+{#                <button class="btn btn-primary btn-lg" style="margin: 15px 10px">#}
+{#                  {{ object.name }}#}
+{#                </button>#}
+{#            </a>#}
+            <a class="btn btn-primary btn-lg" style="margin: 15px 10px" href="{% url 'app_serie_categorie_title' object.name %}">
+                {{ object.name }}
+            </a>
+        {% endfor %}
+    </header>
+
     <!-- Page Features -->
     <div class="row text-center">
 
-    {% for object in categories %}
-    <div class="col-lg-1 col-md-4">
-        <div style="padding-top: 20px; padding-bottom: 20px">
-            <a href="{% url 'app_serie_categorie_title' object.name %}">
-                <button class="btn btn-primary">{{ object.name }}</button>
-            </a>
-        </div>
-    </div>
-    {% endfor %}
+{#        <select id="category" name="category">#}
+{#            <option selected>Tous</option>#}
+{#            {% for object in categories %}#}
+{#            <option value="{{ object.name }}">{{ object.name }}</option>#}
+{#            {% endfor %}#}
+{#        </select>#}
+
     </div>
 
     <div class="row text-center">

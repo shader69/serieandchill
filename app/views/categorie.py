@@ -17,5 +17,5 @@ class CategorieView(ListView):
         if 'cat' in self.kwargs:
             object_list = Serie.objects.filter(categories__name=self.kwargs['cat'])
         else:
-            object_list = Serie.objects.filter(title__icontains='test')
+            object_list = Serie.objects.all()
         return object_list

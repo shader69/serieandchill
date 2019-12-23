@@ -22,7 +22,7 @@
       <!-- Navigation -->
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
-          <a class="navbar-brand" href="#" style="font-weight: bold;">Serie and Chill</a>
+          <a class="navbar-brand" href="{% url 'app_index' %}" style="font-weight: bold;">Serie and Chill</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -37,16 +37,16 @@
                 <a class="nav-link" href="{% url 'app_serie_categorie' %}">{% trans "Category" %}</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">{% trans "Nationality" %}</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link log-btn" href="#">{% trans "Connexion" %}</a>
+                <a class="nav-link" href="{% url 'app_serie_nationality' %}">{% trans "Nationality" %}</a>
               </li>
               <li class="nav-item">
                 <form action="{% url 'app_serie_search' %}" method="get" autocomplete="off">
-                    <input type="text" id="search_title" name="q" placeholder="Rechercher..."/>
-                    <input type="submit" value="Rechercher" />
+                    <input type="text" id="search_title" name="content" placeholder="Rechercher..."/>
+                    <!--<input type="submit" value="Rechercher" />-->
                 </form>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link log-btn" href="#">{% trans "Connexion" %}</a>
               </li>
             </ul>
           </div>

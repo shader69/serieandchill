@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{%  load static i18n %}
+
+{% block content %}
+  <!-- Page Content -->
+  <div class="container">
+
+    {% for object in object_list %}
+    <!-- Jumbotron Header -->
+    <header class="jumbotron my-4">
+      <h1 class="display-3">{{ object.title }}</h1>
+      <p class="lead">{{ object.description }}</p>
+    </header>
+
+    <!-- Page Features -->
+    <div class="row text-center">
+        <div class="card h-100">
+            <img class="card-img-top" src={{ object.photo.url }} alt="">
+            <div class="card-body">
+                <h4 class="card-title">{{ object.title }}</h4>
+                <p class="card-text">{{ object.description }}</p>
+            </div>
+            <div class="card-footer">
+                <a href="{% url 'app_serie_title' object.title %}" class="btn btn-primary">{% trans "See more" %}</a>
+            </div>
+        </div>
+    </div>
+    <!-- /.row -->
+    {% endfor %}
+  </div>
+  <!-- /.container -->
+
+{% endblock %}

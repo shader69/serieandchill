@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{%  load static i18n %}
+
+{% block content %}
+  <!-- Page Content -->
+  <div class="container">
+
+    <!-- Jumbotron Header -->
+    <header class="jumbotron my-4">
+      <h1 class="display-3">{% trans "Nationality" %}</h1>
+        {% for object in nationalities %}
+            <a class="btn btn-primary btn-lg" style="margin: 15px 10px" href="{% url 'app_serie_nationality_title' object.name %}">
+                {{ object.name }}
+            </a>
+        {% endfor %}
+    </header>
+
+    <!-- Page Features -->
+    <div class="row text-center">
+        {% for object in object_list %}
+            {% include "included/seriegrid.html" %}
+        {% endfor %}
+    </div>
+    <!-- /.row -->
+
+  </div>
+  <!-- /.container -->
+
+{% endblock %}
