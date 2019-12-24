@@ -21,34 +21,41 @@
 	<div id="login-page" class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100">
-				<form class="login100-form validate-form">
+				<form class="login100-form validate-form" method="post">
+                    {% csrf_token %}
 					<span class="login100-form-title p-b-43">
 						{%  trans "Login to continue" %}
 					</span>
-					
-					
-					<div class="wrap-input100 validate-input" data-validate = "{%  trans "Valid email is required" %} : ex@abc.xyz">
-						<input class="input100" type="text" name="email">
+
+                    {% if form.errors %}
+                        <p style="text-align: center; color:red; padding-bottom: 3px;">{%  trans "Your username and password didn't match. Please try again." %}</p>
+                    {% endif %}
+
+					<div class="wrap-input100 validate-input my-form-input" data-validate = "{%  trans "Valid email is required" %}">
+                        {{ form.username }}
+{#						<input class="input100" type="text" name="email">#}
 						<span class="focus-input100"></span>
-						<span class="label-input100">{%  trans "Email" %}</span>
+                        {{ form.username.label_tag }}
+{#						<span class="label-input100">{{ form.username.label_tag }}</span>#}
 					</div>
-					
-					
-					<div class="wrap-input100 validate-input" data-validate="{%  trans "Password is required" %}">
-						<input class="input100" type="password" name="pass">
+
+					<div class="wrap-input100 validate-input my-form-input" data-validate="{%  trans "Password is required" %}">
+                        {{ form.password }}
+{#						<input class="input100" type="password" name="pass">#}
 						<span class="focus-input100"></span>
-						<span class="label-input100">{%  trans "Password" %}</span>
+                        {{ form.password.label_tag }}
+{#						<span class="label-input100">{{ form.password.label_tag }}</span>#}
 					</div>
 
                     <br/>
                     <br/>
 
 					<div class="container-login100-form-btn">
-						<button class="login100-form-btn">
+						<button class="login100-form-btn" type="submit">
 							{% trans "Connexion" %}
 						</button>
 					</div>
-					
+
 					<div class="text-center p-t-46 p-b-20">
 						<span class="txt2">
 							{%  trans "Dont have an account ?" %}
@@ -59,22 +66,22 @@
 					</div>
 
                     <div class="text-center p-t-46 p-b-20">
-						<a href="#">
+						<a href="{% url 'password_reset' %}">
                             {%  trans "Forgot password ?" %}
                         </a>
 					</div>
 				</form>
 
-				<div class="login100-more" style="background-image: url('../../static/login/images/bg-01.jpg');">
+				<div class="login100-more" style="background-image: url('{% static 'login/images/bg-01.jpg' %}');">
 				</div>
 			</div>
 		</div>
 	</div>
-	
-	
 
-	
-	
+
+
+
+
 <!--===============================================================================================-->
 	<script src="{% static 'login/vendor/jquery/jquery-3.2.1.min.js' %}"></script>
 <!--===============================================================================================-->

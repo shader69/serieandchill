@@ -1,22 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c6eff261-b4a8-4c4b-8f37-e7227a98a020" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/views/login.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/login/index.html" afterDir="false" />
+    <list default="true" id="c6eff261-b4a8-4c4b-8f37-e7227a98a020" name="Default Changelist" comment="categorie">
+      <change afterPath="$PROJECT_DIR$/templates/registration/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/registration/homepage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/registration/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/serieandchill.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/serieandchill.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/login.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/login.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale/en/LC_MESSAGES/django.po" beforeDir="false" afterPath="$PROJECT_DIR$/locale/en/LC_MESSAGES/django.po" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale/fr/LC_MESSAGES/django.mo" beforeDir="false" afterPath="$PROJECT_DIR$/locale/fr/LC_MESSAGES/django.mo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale/fr/LC_MESSAGES/django.po" beforeDir="false" afterPath="$PROJECT_DIR$/locale/fr/LC_MESSAGES/django.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/serieandchill/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/serieandchill/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/serieandchill/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/serieandchill/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/heroic-features.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/heroic-features.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/login/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/login/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/login/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/login/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/vendor/jquery/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/vendor/jquery/jquery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/vendor/jquery/jquery.slim.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/vendor/jquery/jquery.slim.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/search.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/serie.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/serie.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/login/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,28 +97,16 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/templates" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Kyliann\PycharmProjects\serieandchill\templates\registration" />
       <recent name="C:\Users\klliteras\PycharmProjects\serieandchill\static" />
       <recent name="C:\Users\klliteras\PycharmProjects\serieandchill\static\login" />
       <recent name="C:\Users\klliteras\PycharmProjects\serieandchill\templates\login" />
       <recent name="C:\Users\Kyliann\PycharmProjects\serieandchill\media\covers" />
-      <recent name="$PROJECT_DIR$/static" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/templates" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="venv" type="Python.DjangoServer" factoryName="Django server">
@@ -128,7 +117,7 @@
         <env name="PYTHONUNBUFFERED" value="1" />
         <env name="DJANGO_SETTINGS_MODULE" value="serieandchill.settings" />
       </envs>
-      <option name="SDK_HOME" value="C:\Users\klliteras\PycharmProjects\untitled\venv\Scripts\python.exe" />
+      <option name="SDK_HOME" value="D:\Programmes\JetBrains\PyCharm 2019.3\venv\Scripts\python.exe" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -146,13 +135,15 @@
     </configuration>
   </component>
   <component name="ServiceViewManager">
-    <option name="allServicesViewState">
-      <serviceView>
-        <treeState>
-          <expand />
-          <select />
-        </treeState>
-      </serviceView>
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
     </option>
   </component>
   <component name="SvnConfiguration">
@@ -198,15 +189,6 @@
     <option name="localTasksCounter" value="4" />
     <servers />
   </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
@@ -221,14 +203,18 @@
       <screen x="0" y="0" width="1504" height="972" />
     </state>
     <state x="345" y="144" key="#Inspections/0.0.1504.972@0.0.1504.972" timestamp="1576528046591" />
-    <state x="208" y="141" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1576525954971">
+    <state x="208" y="141" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1577205824279">
       <screen x="0" y="0" width="1504" height="972" />
     </state>
-    <state x="208" y="141" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1504.972@0.0.1504.972" timestamp="1576525954971" />
+    <state x="208" y="141" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1504.972@0.0.1504.972" timestamp="1577205824279" />
     <state x="510" y="289" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1577123205100">
       <screen x="0" y="0" width="1504" height="972" />
     </state>
     <state x="510" y="289" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1504.972@0.0.1504.972" timestamp="1577123205100" />
+    <state x="473" y="93" key="#venv" timestamp="1577205551664">
+      <screen x="0" y="0" width="1504" height="972" />
+    </state>
+    <state x="473" y="93" key="#venv/0.0.1504.972@0.0.1504.972" timestamp="1577205551664" />
     <state x="377" y="80" key="CommitChangelistDialog2" timestamp="1576530332793">
       <screen x="0" y="0" width="1504" height="972" />
     </state>
@@ -237,26 +223,26 @@
       <screen x="0" y="0" width="1504" height="972" />
     </state>
     <state x="532" y="240" key="FileChooserDialogImpl/0.0.1504.972@0.0.1504.972" timestamp="1576524636283" />
-    <state width="1461" height="245" key="GridCell.Tab.0.bottom" timestamp="1577123175998">
+    <state width="1461" height="245" key="GridCell.Tab.0.bottom" timestamp="1577213246920">
       <screen x="0" y="0" width="1504" height="972" />
     </state>
-    <state width="1461" height="245" key="GridCell.Tab.0.bottom/0.0.1504.972@0.0.1504.972" timestamp="1577123175998" />
-    <state width="1461" height="245" key="GridCell.Tab.0.center" timestamp="1577123175997">
+    <state width="1461" height="245" key="GridCell.Tab.0.bottom/0.0.1504.972@0.0.1504.972" timestamp="1577213246920" />
+    <state width="1461" height="245" key="GridCell.Tab.0.center" timestamp="1577213246919">
       <screen x="0" y="0" width="1504" height="972" />
     </state>
-    <state width="1461" height="245" key="GridCell.Tab.0.center/0.0.1504.972@0.0.1504.972" timestamp="1577123175997" />
-    <state width="1461" height="245" key="GridCell.Tab.0.left" timestamp="1577123175996">
+    <state width="1461" height="245" key="GridCell.Tab.0.center/0.0.1504.972@0.0.1504.972" timestamp="1577213246919" />
+    <state width="1461" height="245" key="GridCell.Tab.0.left" timestamp="1577213246919">
       <screen x="0" y="0" width="1504" height="972" />
     </state>
-    <state width="1461" height="245" key="GridCell.Tab.0.left/0.0.1504.972@0.0.1504.972" timestamp="1577123175996" />
-    <state width="1461" height="245" key="GridCell.Tab.0.right" timestamp="1577123175997">
+    <state width="1461" height="245" key="GridCell.Tab.0.left/0.0.1504.972@0.0.1504.972" timestamp="1577213246919" />
+    <state width="1461" height="245" key="GridCell.Tab.0.right" timestamp="1577213246920">
       <screen x="0" y="0" width="1504" height="972" />
     </state>
-    <state width="1461" height="245" key="GridCell.Tab.0.right/0.0.1504.972@0.0.1504.972" timestamp="1577123175997" />
-    <state x="254" y="128" key="SettingsEditor" timestamp="1576527210346">
+    <state width="1461" height="245" key="GridCell.Tab.0.right/0.0.1504.972@0.0.1504.972" timestamp="1577213246920" />
+    <state x="254" y="128" key="SettingsEditor" timestamp="1577205818458">
       <screen x="0" y="0" width="1504" height="972" />
     </state>
-    <state x="254" y="128" key="SettingsEditor/0.0.1504.972@0.0.1504.972" timestamp="1576527210346" />
+    <state x="254" y="128" key="SettingsEditor/0.0.1504.972@0.0.1504.972" timestamp="1577205818458" />
     <state x="345" y="219" key="Vcs.Push.Dialog.v2" timestamp="1576530282809">
       <screen x="0" y="0" width="1504" height="972" />
     </state>
@@ -269,9 +255,20 @@
       <screen x="0" y="0" width="1504" height="972" />
     </state>
     <state x="562" y="403" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1504.972@0.0.1504.972" timestamp="1576869684473" />
-    <state x="473" y="277" key="git4idea.merge.GitPullDialog" timestamp="1577123834786">
+    <state x="473" y="277" key="git4idea.merge.GitPullDialog" timestamp="1577205516972">
       <screen x="0" y="0" width="1504" height="972" />
     </state>
-    <state x="473" y="277" key="git4idea.merge.GitPullDialog/0.0.1504.972@0.0.1504.972" timestamp="1577123834786" />
+    <state x="473" y="277" key="git4idea.merge.GitPullDialog/0.0.1504.972@0.0.1504.972" timestamp="1577205516972" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$APPLICATION_HOME_DIR$/venv/Lib/site-packages/django/contrib/auth/urls.py</url>
+          <line>5</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

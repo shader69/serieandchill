@@ -22,9 +22,13 @@ from django.conf import settings
 
 from django.template import RequestContext, Template
 from django.http import HttpResponse
+from django.views.generic import TemplateView
 
 from app.views.index import IndexView
-from app.views.login import LoginView
+# from app.views.login import LoginView
+# from django.contrib.auth import views as auth_views
+from django.urls import path, include
+from app.views.login import LoggedView
 from app.views.category import CategorieView
 from app.views.search import SearchView
 from app.views.serie import SerieView
@@ -32,11 +36,15 @@ from app.views.nationality import NationalityView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    # path('login/', auth_views.LoginView, {'template_name': 'registration/login.html'}, name='login'),
+    # path('logout/', auth_views.LogoutView, name='logout'),
 ]
 
 urlpatterns += i18n_patterns(
     path(r'', IndexView.as_view(), name='app_index'),
-    path('login', LoginView.as_view(), name='app_login'),
+    path('accounts/', include('django.contrib.auth.urls')),
+    path('hp', LoggedView.as_view(), name='home'),
+    # path('registration', LoginView.as_view(), name='app_login'),
     path('category/<str:cat>', CategorieView.as_view(), name='app_serie_categorie_title'),
     path('category', CategorieView.as_view(), name='app_serie_categorie'),
     path('nationality/<str:nat>', NationalityView.as_view(), name='app_serie_nationality_title'),
