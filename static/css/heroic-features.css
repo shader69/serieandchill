@@ -73,14 +73,84 @@ nav {
 }
 
 .serie-detail img{
-  width: 25%;
+  /*width: 25%;*/
+  width: 100%;
   height: 400px;
   object-fit: cover;
 }
 
-.serie-detail .details{
-  width: 75%;
-}
 .serie-detail {
   display: flex;
+  margin: 24px auto;
+  width: 75%;
+}
+
+.stats-numbers-grid{
+  display: flex;
+  border-top: 1px solid #f0f0f0;
+  border-bottom: 1px solid #f0f0f0;
+  margin: 20px auto;
+}
+
+.stats-numbers-grid .item{
+  width: 33%;
+  text-align: center;
+}
+
+.stats-numbers-grid .number{
+  font-size: 2.5rem;
+}
+
+.card-body .info{
+  color: #b3b3b3;
+}
+
+.stats-numbers-grid .info{
+  line-height: 2.5;
+  text-transform: uppercase;
+}
+
+.grid-result{
+  margin-top: 24px;
+}
+
+.grid{
+  display: flex;
+}
+
+.grid .left{
+  width: 25%;
+}
+
+.grid .right{
+  width: 75%;
+  padding: 30px;
+}
+
+.serie-descr{
+  width: 50%;
+  margin: auto;
+}
+
+.checked {
+  color: orange;
+}
+
+nav form input[type=text] {
+  padding: 5px;
+  font-size: 17px;
+  border: none;
+}
+
+nav form button {
+  float: right;
+  padding: 5px 10px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+nav form button:hover {
+  background: #ccc;
 }

@@ -33,7 +33,7 @@ class Serie(models.Model):
     rate = models.FloatField(blank=False,
                              null=False,
                              default=0,
-                             validators=[MinValueValidator(0), MaxValueValidator(10)])
+                             validators=[MinValueValidator(0), MaxValueValidator(5)])
 
     director = models.CharField(max_length=30,
                                 blank=False,
@@ -49,6 +49,11 @@ class Serie(models.Model):
                                  null=False,
                                  default=1,
                                  validators=[MinValueValidator(1), MaxValueValidator(999)])
+
+    seasonNumb = models.IntegerField(blank=False,
+                                     null=False,
+                                     default=1,
+                                     validators=[MinValueValidator(1), MaxValueValidator(999)])
 
     release = models.DateField(default='2000-01-01',
                                verbose_name="Date de parution")

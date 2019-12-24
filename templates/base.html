@@ -16,6 +16,11 @@
       <!-- Custom styles for this template -->
       <link rel="stylesheet" href="{% static 'css/heroic-features.css' %}">
 
+      <!-- Fonts -->
+      <link rel="stylesheet" type="text/css" href="{% static 'fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}">
+      <link rel="stylesheet" type="text/css" href="{% static 'fonts/Linearicons-Free-v1.0.0/icon-font.min.css' %}">
+
+
     </head>
     <body>
 
@@ -40,13 +45,13 @@
                 <a class="nav-link" href="{% url 'app_serie_nationality' %}">{% trans "Nationality" %}</a>
               </li>
               <li class="nav-item">
-                <form action="{% url 'app_serie_search' %}" method="get" autocomplete="off">
-                    <input type="text" id="search_title" name="content" placeholder="Rechercher..."/>
-                    <!--<input type="submit" value="Rechercher" />-->
+                <form action="{% url 'app_serie_search' %}" method="get" autocomplete="off" style="padding-top: 2.5px">
+                    <input type="text" id="search_title" name="content" placeholder="{% trans "Search" %}..."/>
+                    <button type="submit"><i class="fa fa-search"></i></button>
                 </form>
               </li>
               <li class="nav-item">
-                <a class="nav-link log-btn" href="#">{% trans "Connexion" %}</a>
+                <a class="nav-link log-btn" href="{% url 'app_login' %}">{% trans "Connexion" %}</a>
               </li>
             </ul>
           </div>

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-13 14:39+0000\n"
+"POT-Creation-Date: 2019-12-24 15:53+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,30 +18,91 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: serieandchill/settings.py:136
+#: .\serieandchill\settings.py:136
 msgid "English"
 msgstr ""
 
-#: serieandchill/settings.py:137
+#: .\serieandchill\settings.py:137
 msgid "French"
 msgstr ""
 
-#: templates/base.html:32
+#: .\templates\base.html:37
 msgid "Home"
 msgstr ""
 
-#: templates/base.html:37
+#: .\templates\base.html:42 .\templates\category.html:10
 msgid "Category"
 msgstr ""
 
-#: templates/base.html:40
+#: .\templates\base.html:45 .\templates\nationality.html:10
+#: .\templates\serie.html:20
 msgid "Nationality"
 msgstr ""
 
-#: templates/base.html:43
+#: .\templates\base.html:49
+msgid "Search"
+msgstr ""
+
+#: .\templates\login\index.html:26
+msgid "Login to continue"
+msgstr ""
+
+#: .\templates\login\index.html:30
+msgid "Valid email is required"
+msgstr ""
+
+#: .\templates\login\index.html:33
+msgid "Email"
+msgstr ""
+
+#: .\templates\login\index.html:37
+msgid "Password is required"
+msgstr ""
+
+#: .\templates\login\index.html:40
+msgid "Password"
+msgstr ""
+
+#: .\templates\login\index.html:48
 msgid "Connexion"
 msgstr ""
 
-#: templates/index.html:27
-msgid "See more"
+#: .\templates\login\index.html:54
+msgid "Dont have an account ?"
+msgstr ""
+
+#: .\templates\login\index.html:56
+msgid "Sign up !"
+msgstr ""
+
+#: .\templates\login\index.html:63
+msgid "Forgot password ?"
+msgstr ""
+
+#: .\templates\serie.html:19
+msgid "Gender"
+msgstr ""
+
+#: .\templates\serie.html:21
+msgid "Of"
+msgstr ""
+
+#: .\templates\serie.html:22
+msgid "With"
+msgstr ""
+
+#: .\templates\serie.html:24
+msgid "Rate"
+msgstr ""
+
+#: .\templates\serie.html:36
+msgid "Since"
+msgstr ""
+
+#: .\templates\serie.html:40
+msgid "Season(s)"
+msgstr ""
+
+#: .\templates\serie.html:44
+msgid "Episode(s)"
 msgstr ""

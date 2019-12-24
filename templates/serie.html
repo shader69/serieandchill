@@ -6,14 +6,45 @@
   <div class="container serie-detail">
 
     {% for object in object_list %}
-    <img src={{ object.photo.url }} alt="">
-
     <!-- Page Features -->
-    <div class="row text-center details">
+    <div class="row">
         <div class="card h-100">
             <div class="card-body">
-                <h4 class="card-title">{{ object.title }}</h4>
-                <p class="card-text">{{ object.description }}</p>
+                <div class="grid">
+                    <div class="left">
+                        <img src={{ object.photo.url }} alt="cover">
+                    </div>
+                    <div class="right">
+                        <h4 class="card-title" style="font-size: xx-large">{{ object.title }}</h4>
+                        <p><span class="info">{% trans "Gender" %} : </span>{{ object.categories.all|join:", " }}</p>
+                        <p><span class="info">{% trans "Nationality" %} : </span>{{ object.nationalite }}</p>
+                        <p><span class="info">{% trans "Of" %} : </span>{{ object.director }}</p>
+                        <p><span class="info">{% trans "With" %} : </span>{{ object.actor }}</p>
+                        <p>
+                            <span class="info">{% trans "Rate" %} : </span>{{ object.rate }}/5
+                            <span class="fa fa-star {% if object.rate >= 1 %}checked{% endif %}"></span>
+                            <span class="fa fa-star {% if object.rate >= 2 %}checked{% endif %}"></span>
+                            <span class="fa fa-star {% if object.rate >= 3 %}checked{% endif %}"></span>
+                            <span class="fa fa-star {% if object.rate >= 4 %}checked{% endif %}"></span>
+                            <span class="fa fa-star {% if object.rate >= 5 %}checked{% endif %}"></span>
+                        </p>
+                    </div>
+               </div>
+                <div class="stats-numbers-grid">
+                    <div class="item">
+                        <div class="number">{{ object.yearpublished }}</div>
+                        <div class="info">{% trans "Since" %}</div>
+                    </div>
+                    <div class="item">
+                        <div class="number">{{ object.seasonNumb }}</div>
+                        <div class="info">{% trans "Season(s)" %}</div>
+                    </div>
+                    <div class="item">
+                        <div class="number">{{ object.epNumb }}</div>
+                        <div class="info">{% trans "Episode(s)" %}</div>
+                    </div>
+                </div>
+                <p class="card-text serie-descr">{{ object.description }}</p>
             </div>
         </div>
     </div>

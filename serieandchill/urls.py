@@ -24,6 +24,7 @@ from django.template import RequestContext, Template
 from django.http import HttpResponse
 
 from app.views.index import IndexView
+from app.views.login import LoginView
 from app.views.category import CategorieView
 from app.views.search import SearchView
 from app.views.serie import SerieView
@@ -35,6 +36,7 @@ urlpatterns = [
 
 urlpatterns += i18n_patterns(
     path(r'', IndexView.as_view(), name='app_index'),
+    path('login', LoginView.as_view(), name='app_login'),
     path('category/<str:cat>', CategorieView.as_view(), name='app_serie_categorie_title'),
     path('category', CategorieView.as_view(), name='app_serie_categorie'),
     path('nationality/<str:nat>', NationalityView.as_view(), name='app_serie_nationality_title'),
