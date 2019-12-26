@@ -1,104 +1,80 @@
-{% extends 'base.html' %}
+{% extends 'registration/base.html' %}
 {%  load static i18n %}
 
-{% block content %}
+{% block reg-content %}
 
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="{% static 'login/vendor/animate/animate.css' %}">
+{% if user.is_authenticated %}
 
-	<link rel="stylesheet" type="text/css" href="{% static 'login/vendor/css-hamburgers/hamburgers.min.css' %}">
+    <form class="login100-form validate-form" method="post">
+        <span class="login100-form-title p-b-43">
+            {%  trans "You are already connected" %}
+        </span>
+        <div class="container-login100-form-btn">
+            <a class="login100-form-btn" style="color:white!important" href="{% url 'home' %}">
+                {% trans "My account" %}
+            </a>
+        </div>
+        <br/>
+        <br/>
+        <div class="container-login100-form-btn">
+            <a class="login100-form-btn logout-btn" style="color:white!important" href="{% url 'logout' %}">
+                {% trans "Logout" %}
+            </a>
+        </div>
+    </form>
+{% else %}
 
-	<link rel="stylesheet" type="text/css" href="{% static 'login/vendor/animsition/css/animsition.min.css' %}">
+    <form class="login100-form validate-form" method="post">
+        {% csrf_token %}
+        <span class="login100-form-title p-b-43">
+            {%  trans "Login to continue" %}
+        </span>
 
-	<link rel="stylesheet" type="text/css" href="{% static 'login/vendor/select2/select2.min.css' %}">
+        {% if form.errors %}
+            <p style="text-align: center; color:red; padding-bottom: 3px;">{%  trans "Your username and password didn't match. Please try again." %}</p>
+        {% endif %}
 
-	<link rel="stylesheet" type="text/css" href="{% static 'login/vendor/daterangepicker/daterangepicker.css' %}">
+        <div class="wrap-input100 validate-input my-form-input" data-validate = "{%  trans "Valid username is required" %}">
+            {{ form.username }}
+    {#						<input class="input100" type="text" name="email">#}
+            <span class="focus-input100"></span>
+            {{ form.username.label_tag }}
+    {#						<span class="label-input100">{{ form.username.label_tag }}</span>#}
+        </div>
 
-	<link rel="stylesheet" type="text/css" href="{% static 'login/css/util.css' %}">
-	<link rel="stylesheet" type="text/css" href="{% static 'login/css/main.css' %}">
-<!--===============================================================================================-->
+        <div class="wrap-input100 validate-input my-form-input" data-validate="{%  trans "Password is required" %}">
+            {{ form.password }}
+    {#						<input class="input100" type="password" name="pass">#}
+            <span class="focus-input100"></span>
+            {{ form.password.label_tag }}
+    {#						<span class="label-input100">{{ form.password.label_tag }}</span>#}
+        </div>
 
-	<div id="login-page" class="limiter">
-		<div class="container-login100">
-			<div class="wrap-login100">
-				<form class="login100-form validate-form" method="post">
-                    {% csrf_token %}
-					<span class="login100-form-title p-b-43">
-						{%  trans "Login to continue" %}
-					</span>
+        <br/>
+        <br/>
 
-                    {% if form.errors %}
-                        <p style="text-align: center; color:red; padding-bottom: 3px;">{%  trans "Your username and password didn't match. Please try again." %}</p>
-                    {% endif %}
+        <div class="container-login100-form-btn">
+            <button class="login100-form-btn" type="submit">
+                {% trans "Login" %}
+            </button>
+        </div>
 
-					<div class="wrap-input100 validate-input my-form-input" data-validate = "{%  trans "Valid email is required" %}">
-                        {{ form.username }}
-{#						<input class="input100" type="text" name="email">#}
-						<span class="focus-input100"></span>
-                        {{ form.username.label_tag }}
-{#						<span class="label-input100">{{ form.username.label_tag }}</span>#}
-					</div>
+        <div class="text-center p-t-46 p-b-20">
+            <span class="txt2">
+                {%  trans "Dont have an account ?" %}
+                <a href="{% url 'signup' %}">
+                    {% trans "Sign up !" %}
+                </a>
+            </span>
+        </div>
 
-					<div class="wrap-input100 validate-input my-form-input" data-validate="{%  trans "Password is required" %}">
-                        {{ form.password }}
-{#						<input class="input100" type="password" name="pass">#}
-						<span class="focus-input100"></span>
-                        {{ form.password.label_tag }}
-{#						<span class="label-input100">{{ form.password.label_tag }}</span>#}
-					</div>
+        <div class="text-center p-t-46 p-b-20">
+            <a href="{% url 'password_reset' %}">
+                {% trans "Forgot password ?" %}
+            </a>
+        </div>
+    </form>
 
-                    <br/>
-                    <br/>
-
-					<div class="container-login100-form-btn">
-						<button class="login100-form-btn" type="submit">
-							{% trans "Connexion" %}
-						</button>
-					</div>
-
-					<div class="text-center p-t-46 p-b-20">
-						<span class="txt2">
-							{%  trans "Dont have an account ?" %}
-                            <a href="#">
-                                {%  trans "Sign up !" %}
-                            </a>
-						</span>
-					</div>
-
-                    <div class="text-center p-t-46 p-b-20">
-						<a href="{% url 'password_reset' %}">
-                            {%  trans "Forgot password ?" %}
-                        </a>
-					</div>
-				</form>
-
-				<div class="login100-more" style="background-image: url('{% static 'login/images/bg-01.jpg' %}');">
-				</div>
-			</div>
-		</div>
-	</div>
-
-
-
-
-
-<!--===============================================================================================-->
-	<script src="{% static 'login/vendor/jquery/jquery-3.2.1.min.js' %}"></script>
-<!--===============================================================================================-->
-	<script src="{% static 'login/vendor/animsition/js/animsition.min.js' %}"></script>
-<!--===============================================================================================-->
-	<script src="{% static 'login/vendor/bootstrap/js/popper.js' %}"></script>
-
-	<script src="{% static 'login/vendor/bootstrap/js/bootstrap.min.js' %}"></script>
-<!--===============================================================================================-->
-	<script src="{% static 'login/vendor/select2/select2.min.js' %}"></script>
-<!--===============================================================================================-->
-	<script src="{% static 'login/vendor/daterangepicker/moment.min.js' %}"></script>
-
-	<script src="{% static 'login/vendor/daterangepicker/daterangepicker.js' %}"></script>
-<!--===============================================================================================-->
-	<script src="{% static 'login/vendor/countdowntime/countdowntime.js' %}"></script>
-<!--===============================================================================================-->
-	<script src="{% static 'login/js/main.js' %}"></script>
+{% endif %}
 
 {% endblock %}

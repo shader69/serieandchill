@@ -15,12 +15,28 @@ body {
   border-color: #007bff;
   font-weight: bold;
   text-transform: uppercase;
+  padding: .5rem 1rem;
 }
 
 .log-btn:hover {
   color: #fff;
   background-color: #0069d9;
   border-color: #0062cc;
+  text-decoration: none;
+}
+
+.logout-btn{
+  background-color: #e60000 !important;
+}
+
+.logout-btn:hover{
+  background-color: #ad0000 !important;
+}
+
+.hi-btn{
+  color: white;
+  padding: 8px 0px 0px 10px;
+  margin-bottom: 0px;
 }
 
 nav {

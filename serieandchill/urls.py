@@ -16,23 +16,21 @@ Including another URLconf
 from django.conf.urls import url
 from django.conf.urls.i18n import i18n_patterns
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 from django.conf.urls.static import static
 from django.conf import settings
 
-from django.template import RequestContext, Template
-from django.http import HttpResponse
-from django.views.generic import TemplateView
-
 from app.views.index import IndexView
-# from app.views.login import LoginView
 # from django.contrib.auth import views as auth_views
-from django.urls import path, include
-from app.views.login import LoggedView
+from app.views.login import LoggedView, MyaccountView
+from app.views.registration import signup as SignupView
+from app.views.registration import edit_password as PasswordchangeView
+from app.views.registration import edit_profile as ProfilechangeView
 from app.views.category import CategorieView
 from app.views.search import SearchView
 from app.views.serie import SerieView
 from app.views.nationality import NationalityView
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -43,8 +41,12 @@ urlpatterns = [
 urlpatterns += i18n_patterns(
     path(r'', IndexView.as_view(), name='app_index'),
     path('accounts/', include('django.contrib.auth.urls')),
-    path('hp', LoggedView.as_view(), name='home'),
-    # path('registration', LoginView.as_view(), name='app_login'),
+    path('accounts/home', LoggedView.as_view(), name='home'),
+    path('accounts/myaccount', MyaccountView.as_view(), name='myaccount'),
+    path('accounts/signup/', SignupView, name='signup'),
+    path('accounts/password_change', PasswordchangeView, name='edit_password'),
+    path('accounts/profile_change', ProfilechangeView, name='edit_profile'),
+
     path('category/<str:cat>', CategorieView.as_view(), name='app_serie_categorie_title'),
     path('category', CategorieView.as_view(), name='app_serie_categorie'),
     path('nationality/<str:nat>', NationalityView.as_view(), name='app_serie_nationality_title'),

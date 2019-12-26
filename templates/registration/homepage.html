@@ -1,15 +1,22 @@
 {% extends 'base.html' %}
-
-{% block title %}Home{% endblock %}
+{%  load static i18n %}
 
 {% block content %}
-{% if user.is_authenticated %}
-  Hi {{ user.username }}!<br/>
-  Email : {{ user.email }}<br/>
-  Firstname : {{ user.first_name }}<br/>
-  Lastname : {{ user.last_name }}<br/>
-{% else %}
-  <p>You are not logged in</p>
-  <a href="{% url 'login' %}">login</a>
-{% endif %}
+    {% if user.is_authenticated %}
+        Hi {{ user.username }}!<br/>
+        Email : {{ user.email }}<br/>
+        Firstname : {{ user.first_name }}<br/>
+        Lastname : {{ user.last_name }}<br/>
+        <br/>
+        <a class="log-btn" href="{% url 'logout' %}">{% trans "Logout" %}</a>
+
+        <br/>
+        <a class="log-btn" href="{% url 'edit_password' %}">Password</a>
+
+        <br/>
+        <a class="log-btn" href="{% url 'edit_profile' %}">Profile</a>
+    {% else %}
+      <p>{% trans "You are not logged in." %}</p>
+      <a class="log-btn" href="{% url 'login' %}">{% trans "Login" %}</a>
+    {% endif %}
 {% endblock %}

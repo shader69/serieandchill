@@ -1,23 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c6eff261-b4a8-4c4b-8f37-e7227a98a020" name="Default Changelist" comment="categorie">
-      <change afterPath="$PROJECT_DIR$/templates/registration/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/registration/homepage.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/registration/login.html" afterDir="false" />
+    <list default="true" id="c6eff261-b4a8-4c4b-8f37-e7227a98a020" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/forms/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/forms/edit_password.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/forms/edit_profile.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/forms/signup.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/myaccount.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/registration.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/registration/base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/registration/edit_password.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/registration/edit_profile.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/registration/myaccount.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/registration/password_reset_done.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/registration/password_reset_form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/registration/signup.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/serieandchill.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/serieandchill.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/login.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/login.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/locale/en/LC_MESSAGES/django.po" beforeDir="false" afterPath="$PROJECT_DIR$/locale/en/LC_MESSAGES/django.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/locale/fr/LC_MESSAGES/django.mo" beforeDir="false" afterPath="$PROJECT_DIR$/locale/fr/LC_MESSAGES/django.mo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/locale/fr/LC_MESSAGES/django.po" beforeDir="false" afterPath="$PROJECT_DIR$/locale/fr/LC_MESSAGES/django.po" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/serieandchill/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/serieandchill/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/serieandchill/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/serieandchill/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/login/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/login/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/login/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/login/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/vendor/jquery/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/vendor/jquery/jquery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/vendor/jquery/jquery.slim.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/vendor/jquery/jquery.slim.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/heroic-features.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/heroic-features.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/login/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/registration/homepage.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/homepage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/registration/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/registration/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/login.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,8 +79,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -97,16 +109,28 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/templates" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\klliteras\PycharmProjects\serieandchill\app\views" />
       <recent name="C:\Users\Kyliann\PycharmProjects\serieandchill\templates\registration" />
       <recent name="C:\Users\klliteras\PycharmProjects\serieandchill\static" />
       <recent name="C:\Users\klliteras\PycharmProjects\serieandchill\static\login" />
       <recent name="C:\Users\klliteras\PycharmProjects\serieandchill\templates\login" />
-      <recent name="C:\Users\Kyliann\PycharmProjects\serieandchill\media\covers" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/templates" />
-    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
   </component>
   <component name="RunManager">
     <configuration name="venv" type="Python.DjangoServer" factoryName="Django server">
@@ -117,7 +141,7 @@
         <env name="PYTHONUNBUFFERED" value="1" />
         <env name="DJANGO_SETTINGS_MODULE" value="serieandchill.settings" />
       </envs>
-      <option name="SDK_HOME" value="D:\Programmes\JetBrains\PyCharm 2019.3\venv\Scripts\python.exe" />
+      <option name="SDK_HOME" value="C:\Users\klliteras\PycharmProjects\untitled\venv\Scripts\python.exe" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -133,18 +157,6 @@
       <option name="customRunCommand" value="" />
       <method v="2" />
     </configuration>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -191,6 +203,17 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add imagefield" />

@@ -50,9 +50,21 @@
                     <button type="submit"><i class="fa fa-search"></i></button>
                 </form>
               </li>
-              <li class="nav-item">
-                <a class="nav-link log-btn" href="{% url 'login' %}">{% trans "Connexion" %}</a>
-              </li>
+                {% if user.is_authenticated %}
+                    <li class="nav-item">
+                        <p class="nav-lin hi-btn">{% trans 'Hi' %} <b>{{ user.username }}</b> !</p>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link log-btn" style="margin-left: 10px" href="{% url 'home' %}">{% trans 'My account' %}</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link log-btn logout-btn" style="margin-left: 10px" href="{% url 'logout' %}">{% trans 'Logout' %}</a>
+                    </li>
+                {% else %}
+                    <li class="nav-item">
+                        <a class="nav-link log-btn" style="margin-left: 10px" href="{% url 'login' %}">{% trans "Login" %}</a>
+                    </li>
+                {% endif %}
             </ul>
           </div>
         </div>

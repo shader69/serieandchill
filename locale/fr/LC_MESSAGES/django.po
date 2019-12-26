@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-24 15:53+0100\n"
+"POT-Creation-Date: 2019-12-26 14:03+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,7 +26,8 @@ msgstr ""
 msgid "French"
 msgstr ""
 
-#: .\templates\base.html:37
+#: .\templates\base.html:37 .\templates\registration\homepage.html:5
+#: .\templates\registration\password_reset_done.html:23
 msgid "Home"
 msgstr "Accueil"
 
@@ -43,41 +44,104 @@ msgstr "Nationalité"
 msgid "Search"
 msgstr "Recherche"
 
-#: .\templates\login\index.html:26
+#: .\templates\base.html:55
+msgid "Hi"
+msgstr "Bonjour"
+
+#: .\templates\base.html:58 .\templates\registration\login.html:14
+msgid "My account"
+msgstr "Mon compte"
+
+#: .\templates\base.html:61 .\templates\registration\homepage.html:15
+msgid "Logout"
+msgstr "Déconnexion"
+
+#: .\templates\base.html:65 .\templates\registration\homepage.html:18
+#: .\templates\registration\login.html:51
+msgid "Login"
+msgstr "Connexion"
+
+#: .\templates\registration\homepage.html:17
+msgid "You are not logged in."
+msgstr "Vous n'êtes pas connecté."
+
+#: .\templates\registration\login.html:10
+msgid "You are already connected"
+msgstr "Vous êtes déja connecté."
+
+#: .\templates\registration\login.html:23
 msgid "Login to continue"
 msgstr "Connectez vous pour continuer"
 
-#: .\templates\login\index.html:30
-msgid "Valid email is required"
-msgstr "Un email valide est requis"
+#: .\templates\registration\login.html:27
+msgid "Your username and password didn't match. Please try again."
+msgstr ""
+"Votre nom d'utilisateur et mot de passe ne correspondent pas. Merci "
+"d'essayer à nouveau."
 
-#: .\templates\login\index.html:33
-msgid "Email"
-msgstr "Email"
+#: .\templates\registration\login.html:30
+#, fuzzy
+#| msgid "Valid email is required"
+msgid "Valid username is required"
+msgstr "Un nom d'utilisateur valide est requis"
 
-#: .\templates\login\index.html:37
+#: .\templates\registration\login.html:38
 msgid "Password is required"
 msgstr "Mot de passe requis"
 
-#: .\templates\login\index.html:40
-msgid "Password"
-msgstr "Mot de passe"
-
-#: .\templates\login\index.html:48
-msgid "Connexion"
-msgstr "Connexion"
-
-#: .\templates\login\index.html:54
+#: .\templates\registration\login.html:57
 msgid "Dont have an account ?"
 msgstr "Vous n'avez pas de compte ?"
 
-#: .\templates\login\index.html:56
+#: .\templates\registration\login.html:59
+#: .\templates\registration\signup.html:9
 msgid "Sign up !"
 msgstr "Inscrivez vous !"
 
-#: .\templates\login\index.html:63
+#: .\templates\registration\login.html:66
+#: .\templates\registration\password_reset_form.html:9
 msgid "Forgot password ?"
 msgstr "Mot de passe oublié ?"
+
+#: .\templates\registration\password_reset_done.html:9
+msgid "Password reset message sent"
+msgstr "Message de réinitialisation du mot de passe envoyé"
+
+#: .\templates\registration\password_reset_done.html:14
+msgid ""
+"We’ve emailed you the instructions for changing your password, as long as an "
+"account exists with the address you specified. You should receive this "
+"message quickly. If you do not receive a message, verify that you have "
+"entered the address you registered with and check your spam folder."
+msgstr ""
+"Nous vous avons envoyé par courriel les instructions pour changer de mot de "
+"passe, pour autant qu’un compte existe avec l’adresse que vous avez "
+"indiquée. Vous devriez recevoir rapidement ce message. Si vous ne recevez "
+"pas de message, vérifiez que vous avez saisi l’adresse avec laquelle vous "
+"vous êtes enregistré et contrôlez votre dossier de pourriels."
+
+#: .\templates\registration\password_reset_form.html:13
+#, fuzzy
+#| msgid "Your username and password didn't match. Please try again."
+msgid "Your email doesn't match. Please try again."
+msgstr "Votre email ne correspond pas. Merci d'essayer à nouveau."
+
+#: .\templates\registration\password_reset_form.html:16
+msgid "Valid email is required"
+msgstr "Un email valide est requis"
+
+#: .\templates\registration\password_reset_form.html:34
+msgid "Send"
+msgstr "Envoyer"
+
+#: .\templates\registration\signup.html:13
+msgid "An error is present in your form. Please try again."
+msgstr ""
+"Une erreur est présente dans votre formulaire. Merci d'essayer à nouveau."
+
+#: .\templates\registration\signup.html:35
+msgid "Save"
+msgstr "Enregistrer"
 
 #: .\templates\serie.html:19
 msgid "Gender"
@@ -106,6 +170,15 @@ msgstr "Saison(s)"
 #: .\templates\serie.html:44
 msgid "Episode(s)"
 msgstr "Episode(s)"
+
+#~ msgid "Email"
+#~ msgstr "Email"
+
+#~ msgid "Password"
+#~ msgstr "Mot de passe"
+
+#~ msgid "Connexion"
+#~ msgstr "Connexion"
 
 #~ msgid "See more"
 #~ msgstr "Voir la fiche"
