@@ -27,10 +27,12 @@ body {
 
 .logout-btn{
   background-color: #e60000 !important;
+  border-color: #e60000 !important;
 }
 
 .logout-btn:hover{
   background-color: #ad0000 !important;
+  border-color: #ad0000 !important;
 }
 
 .hi-btn{
@@ -169,4 +171,96 @@ nav form button {
 
 nav form button:hover {
   background: #ccc;
+}
+
+.form-tab td{
+  padding:10px;
+}
+
+.form-tab .log-btn{
+  width: 100%;
+}
+
+
+/*-------------------------------------------------*/
+
+
+
+.comment_block {
+	width: 65%;
+    background-color: #f4f4f4;
+	margin: 0 auto;
+	padding: 10px;
+}
+
+.create_new_comment {
+    width: 100%;
+    padding: 20px 0;
+}
+
+.input_comment {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+  width: calc(100% - 75px);
+}
+
+.input_comment input[type="text"] {
+  width: 100%;
+  font-weight: 300;
+  font-size: 1.3rem;
+  padding: 10px;
+  border: none;
+}
+
+.input_comment input[type="text"]:focus {
+    outline: none;
+    border-bottom: 2px solid grey;
+}
+
+.new_comment {
+  width: 100%;
+  height: auto;
+  padding: 15px 0;
+  border-top: 1px solid grey;
+}
+
+.comment_body {
+    width: calc(100% - 75px);
+    font-size: .9rem;
+    color: #555;
+    background-color: WHITE;
+}
+
+.comment_body p {
+    padding: 12px;
+}
+
+.comment_block ul {
+  list-style-type: none;
+  font-size: 0;
+  margin-bottom: 0!important;
+}
+
+.comment_block li {
+  display: inline-block;
+  padding: 5px;
+  font-size: .7rem;
+  color: GREY;
+}
+
+
+/*.comment_block li i {*/
+/*  margin-right: 5px;*/
+/*}*/
+
+.comment_block li span {
+  margin-left: 5px;
+}
+
+.comment_details {
+  display: inline-block;
+  vertical-align: middle;
+  width: 70%;
+  text-align: left;
 }

@@ -2,34 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c6eff261-b4a8-4c4b-8f37-e7227a98a020" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/forms/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/forms/edit_password.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/forms/edit_profile.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/forms/signup.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/myaccount.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/registration.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/registration/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/registration/edit_password.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/registration/edit_profile.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/registration/myaccount.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/registration/password_reset_done.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/registration/password_reset_form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/registration/signup.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/serieandchill.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/serieandchill.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/registration/password_change_done.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/forms/edit_profile.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/forms/edit_profile.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/forms/signup.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/forms/create_user.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/category.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/category.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/index.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/index.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/login.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/login.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/myaccount.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/nationality.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/nationality.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/registration.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/registration.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/serie.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/serie.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/locale/en/LC_MESSAGES/django.po" beforeDir="false" afterPath="$PROJECT_DIR$/locale/en/LC_MESSAGES/django.po" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/locale/fr/LC_MESSAGES/django.mo" beforeDir="false" afterPath="$PROJECT_DIR$/locale/fr/LC_MESSAGES/django.mo" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/locale/fr/LC_MESSAGES/django.po" beforeDir="false" afterPath="$PROJECT_DIR$/locale/fr/LC_MESSAGES/django.po" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/serieandchill/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/serieandchill/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/serieandchill/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/serieandchill/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/css/heroic-features.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/heroic-features.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/registration/edit_password.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/password_change_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/registration/edit_profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/edit_profile.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/registration/homepage.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/homepage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/registration/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/registration/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/registration/myaccount.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/registration/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/create_user.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/serie.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/serie.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -198,7 +195,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576243063845</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="[ADD] signup form&#10;[ADD] password change form&#10;[ADD] password reset form&#10;[ADD] profile edit form (in progress)">
+      <created>1577376241126</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1577376241141</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -219,7 +223,8 @@
     <MESSAGE value="add imagefield" />
     <MESSAGE value="add imagefield (2)" />
     <MESSAGE value="add translation" />
-    <option name="LAST_COMMIT_MESSAGE" value="add translation" />
+    <MESSAGE value="[ADD] signup form&#10;[ADD] password change form&#10;[ADD] password reset form&#10;[ADD] profile edit form (in progress)" />
+    <option name="LAST_COMMIT_MESSAGE" value="[ADD] signup form&#10;[ADD] password change form&#10;[ADD] password reset form&#10;[ADD] profile edit form (in progress)" />
   </component>
   <component name="WindowStateProjectService">
     <state x="345" y="144" key="#Inspections" timestamp="1576528046591">

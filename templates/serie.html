@@ -45,6 +45,57 @@
                     </div>
                 </div>
                 <p class="card-text serie-descr">{{ object.description }}</p>
+                <br/>
+                <br/>
+                <br/>
+
+{#-------------------------------------------------------------------------------------------------------------------#}
+
+                <!-- comments container -->
+                <div class="comment_block">
+
+                    <!-- used by #{user} to create a new comment -->
+                    <div class="create_new_comment">
+
+                        <!-- the input field -->
+                        <div class="input_comment">
+                            <input type="text" placeholder="Write a comment..">
+                        </div>
+                    </div>
+
+                    {% for object in comments %}
+                        <!-- new comment -->
+                        <ul class="new_comment">
+
+                            <!-- build comment -->
+                            <ul>
+
+                                <!-- inc. date and time -->
+                                <div class="comment_details">
+                                    <ul>
+                                        <li><i class="fa fa-pencil"></i><span>{{ object.creator }}</span></li>
+                                        <li><i class="fa fa-calendar"></i><span>{{ object.postdate }}</span></li>
+                                        <li>
+                                            <span class="info">{% trans "Rate" %} : </span>{{ object.rate }}/5
+                                            <i class="fa fa-star {% if object.rate >= 1 %}checked{% endif %}"></i>
+                                            <i class="fa fa-star {% if object.rate >= 2 %}checked{% endif %}"></i>
+                                            <i class="fa fa-star {% if object.rate >= 3 %}checked{% endif %}"></i>
+                                            <i class="fa fa-star {% if object.rate >= 4 %}checked{% endif %}"></i>
+                                            <i class="fa fa-star {% if object.rate >= 5 %}checked{% endif %}"></i>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <!-- the comment body -->
+                                <div class="comment_body">
+                                    <p>{{ object.content }}</p>
+                                </div>
+                            </ul>
+                        </ul>
+                    {% endfor %}
+                </div>
+{#-------------------------------------------------------------------------------------------------------------------#}
+
             </div>
         </div>
     </div>

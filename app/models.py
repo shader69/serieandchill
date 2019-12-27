@@ -1,3 +1,5 @@
+import datetime
+from django.contrib.auth.models import User
 from django.db import models
 from django.core.validators import MinValueValidator, MaxValueValidator
 
@@ -77,3 +79,29 @@ class Serie(models.Model):
 
     def yearpublished(self):
         return self.release.strftime('%Y')
+
+
+class Comment(models.Model):
+    serie = models.ForeignKey(Serie,
+                              null=True,
+                              on_delete=models.SET_NULL,
+                              related_name='serie')
+
+    creator = models.ForeignKey(User,
+                                null=True,
+                                on_delete=models.SET_NULL,
+                                related_name='creator')
+
+    content = models.TextField(null=False,
+                               default=None)
+
+    rate = models.FloatField(blank=False,
+                             null=False,
+                             default=0,
+                             validators=[MinValueValidator(0), MaxValueValidator(5)])
+
+    postdate = models.DateField(default=datetime.date.today,
+                                null=False)
+
+    def __str__(self):
+        return self.content

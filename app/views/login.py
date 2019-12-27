@@ -7,11 +7,3 @@ class LoggedView(TemplateView):
     def get_context_data(self, **kwargs):
         result = super(LoggedView, self).get_context_data(**kwargs)
         return result
-
-
-class MyaccountView(TemplateView):
-    template_name = 'registration/myaccount.html'
-
-    def get_context_data(self, **kwargs):
-        result = super(MyaccountView, self).get_context_data(**kwargs)
-        return result

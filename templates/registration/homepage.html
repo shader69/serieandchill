@@ -3,18 +3,53 @@
 
 {% block content %}
     {% if user.is_authenticated %}
-        Hi {{ user.username }}!<br/>
-        Email : {{ user.email }}<br/>
-        Firstname : {{ user.first_name }}<br/>
-        Lastname : {{ user.last_name }}<br/>
-        <br/>
-        <a class="log-btn" href="{% url 'logout' %}">{% trans "Logout" %}</a>
+{#        Hi {{ user.username }}!<br/>#}
+{#        Email : {{ user.email }}<br/>#}
+{#        Firstname : {{ user.first_name }}<br/>#}
+{#        Lastname : {{ user.last_name }}<br/>#}
+{#        <br/>#}
+{#        <a class="log-btn" href="{% url 'logout' %}">{% trans "Logout" %}</a>#}
+{##}
+{#        <br/>#}
+{#        <a class="log-btn" href="{% url 'password_change' %}">Password</a>#}
+{##}
+{#        <br/>#}
+{#        <a class="log-btn" href="{% url 'edit_profile' %}">Profile</a>#}
 
-        <br/>
-        <a class="log-btn" href="{% url 'edit_password' %}">Password</a>
 
-        <br/>
-        <a class="log-btn" href="{% url 'edit_profile' %}">Profile</a>
+        <style>
+        </style>
+
+        <!-- Page Content -->
+        <div class="container serie-detail">
+
+            <!-- Page Features -->
+            <div class="row" style="margin:auto;">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <table class="form-tab">
+                            <tr><td>{% trans 'Username' %} :</td><td>{{ user.username }}</td></tr>
+                            <tr><td>{% trans 'Email' %} :</td><td>{{ user.email }}</td></tr>
+                            <tr><td>{% trans 'Firstname' %} :</td><td>{{ user.first_name }}</td></tr>
+                            <tr><td>{% trans 'Lastname' %} :</td><td>{{ user.last_name }}</td></tr>
+
+                            <tr><td colspan="2"><a href="{% url 'edit_profile' %}"><button class="log-btn">{% trans "My account" %}</button></a></td></tr>
+                            <tr><td colspan="2"><a href="{% url 'password_change' %}"><button class="log-btn">{% trans "Change my password" %}</button></a></td></tr>
+                            <tr><td colspan="2"><a href="{% url 'logout' %}"><button class="log-btn logout-btn">{% trans "Logout" %}</button></a></td></tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!-- /.row -->
+          </div>
+          <!-- /.container -->
+
+
+
+
+
+
+
     {% else %}
       <p>{% trans "You are not logged in." %}</p>
       <a class="log-btn" href="{% url 'login' %}">{% trans "Login" %}</a>

@@ -22,8 +22,8 @@ from django.conf import settings
 
 from app.views.index import IndexView
 # from django.contrib.auth import views as auth_views
-from app.views.login import LoggedView, MyaccountView
-from app.views.registration import signup as SignupView
+from app.views.login import LoggedView
+from app.views.registration import create_user as SignupView
 from app.views.registration import edit_password as PasswordchangeView
 from app.views.registration import edit_profile as ProfilechangeView
 from app.views.category import CategorieView
@@ -42,9 +42,9 @@ urlpatterns += i18n_patterns(
     path(r'', IndexView.as_view(), name='app_index'),
     path('accounts/', include('django.contrib.auth.urls')),
     path('accounts/home', LoggedView.as_view(), name='home'),
-    path('accounts/myaccount', MyaccountView.as_view(), name='myaccount'),
     path('accounts/signup/', SignupView, name='signup'),
-    path('accounts/password_change', PasswordchangeView, name='edit_password'),
+    # path('accounts/password_change', PasswordchangeView, name='edit_password'),
+    # path('password/', PasswordchangeView, name='edit_password'),
     path('accounts/profile_change', ProfilechangeView, name='edit_profile'),
 
     path('category/<str:cat>', CategorieView.as_view(), name='app_serie_categorie_title'),
