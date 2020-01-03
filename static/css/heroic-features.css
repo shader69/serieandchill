@@ -205,15 +205,16 @@ nav form button:hover {
   width: calc(100% - 75px);
 }
 
-.input_comment input[type="text"] {
+.input_comment input[type="text"], .input_comment textarea {
   width: 100%;
   font-weight: 300;
   font-size: 1.3rem;
   padding: 10px;
   border: none;
+  resize: none;
 }
 
-.input_comment input[type="text"]:focus {
+.input_comment input[type="text"]:focus, .input_comment textarea:focus {
     outline: none;
     border-bottom: 2px solid grey;
 }
@@ -249,10 +250,9 @@ nav form button:hover {
   color: GREY;
 }
 
-
-/*.comment_block li i {*/
-/*  margin-right: 5px;*/
-/*}*/
+.comment_block input[type="number"]{
+	width: 40px;
+}
 
 .comment_block li span {
   margin-left: 5px;

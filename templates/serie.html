@@ -54,22 +54,18 @@
                 <!-- comments container -->
                 <div class="comment_block">
 
-                    <!-- used by #{user} to create a new comment -->
-                    <div class="create_new_comment">
-
-                        <!-- the input field -->
-                        <div class="input_comment">
-                            <input type="text" placeholder="Write a comment..">
+                    <a href="{% url "app_comment_create" %}?serie_id={{ object.id }}">
+                        <div class="create_new_comment">
+                            <div class="input_comment">
+                                <input type="text" placeholder="{% trans 'Write a comment' %}...">
+                            </div>
                         </div>
-                    </div>
-
+                    </a>
                     {% for object in comments %}
                         <!-- new comment -->
                         <ul class="new_comment">
-
                             <!-- build comment -->
                             <ul>
-
                                 <!-- inc. date and time -->
                                 <div class="comment_details">
                                     <ul>
@@ -85,7 +81,6 @@
                                         </li>
                                     </ul>
                                 </div>
-
                                 <!-- the comment body -->
                                 <div class="comment_body">
                                     <p>{{ object.content }}</p>

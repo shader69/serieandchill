@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-27 12:22+0100\n"
+"POT-Creation-Date: 2020-01-03 14:32+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -55,43 +55,40 @@ msgstr "Mon compte"
 
 #: .\templates\base.html:61 .\templates\registration\homepage.html:38
 #: .\templates\registration\login.html:21
-#: .\templates\registration\myaccount.html:11
 msgid "Logout"
 msgstr "Déconnexion"
 
 #: .\templates\base.html:65 .\templates\registration\edit_profile.html:44
 #: .\templates\registration\homepage.html:55
 #: .\templates\registration\login.html:58
-#: .\templates\registration\myaccount.html:14
 #: .\templates\registration\password_change_done.html:16
 #: .\templates\registration\password_change_form.html:46
 msgid "Login"
 msgstr "Connexion"
 
-#: .\templates\registration\create_user.html:9
-#: .\templates\registration\login.html:66
-#: .\templates\registration\myaccount.html:44
-msgid "Sign up !"
-msgstr "Inscrivez vous !"
-
-#: .\templates\registration\create_user.html:13
-#: .\templates\registration\myaccount.html:22
-#: .\templates\registration\myaccount.html:48
-msgid "An error is present in your form. Please try again."
-msgstr ""
-"Une erreur est présente dans votre formulaire. Merci d'essayer à nouveau."
-
+#: .\templates\create_comment.html:32
 #: .\templates\registration\create_user.html:35
 #: .\templates\registration\edit_profile.html:32
-#: .\templates\registration\myaccount.html:33
-#: .\templates\registration\myaccount.html:70
 #: .\templates\registration\password_change_form.html:32
 msgid "Save"
 msgstr "Enregistrer"
 
+#: .\templates\index.html:12
+msgid "Add a serie"
+msgstr "Ajouter une série"
+
+#: .\templates\registration\create_user.html:9
+#: .\templates\registration\login.html:66
+msgid "Sign up !"
+msgstr "Inscrivez vous !"
+
+#: .\templates\registration\create_user.html:13
+msgid "An error is present in your form. Please try again."
+msgstr ""
+"Une erreur est présente dans votre formulaire. Merci d'essayer à nouveau."
+
 #: .\templates\registration\edit_profile.html:43
 #: .\templates\registration\homepage.html:54
-#: .\templates\registration\myaccount.html:13
 #: .\templates\registration\password_change_done.html:15
 #: .\templates\registration\password_change_form.html:45
 msgid "You are not logged in."
@@ -189,7 +186,7 @@ msgstr "De"
 msgid "With"
 msgstr "Avec"
 
-#: .\templates\serie.html:24
+#: .\templates\serie.html:24 .\templates\serie.html:75
 msgid "Rate"
 msgstr "Note"
 
@@ -204,6 +201,10 @@ msgstr "Saison(s)"
 #: .\templates\serie.html:44
 msgid "Episode(s)"
 msgstr "Episode(s)"
+
+#: .\templates\serie.html:60
+msgid "Write a comment"
+msgstr "Ecrivez un commentaire"
 
 #~ msgid "Password"
 #~ msgstr "Mot de passe"

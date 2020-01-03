@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{%  load static i18n %}
+
+{% block content %}
+
+<!-- comments container -->
+<div class="comment_block">
+
+    <form method="post" action="" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+{#                        <!-- used by #{user} to create a new comment -->#}
+{#                        <div class="create_new_comment">#}
+{#                            <!-- the input field -->#}
+{#                            <div class="input_comment">#}
+{#                                <input type="text" placeholder="{% trans 'Write a comment' %}...">#}
+{#                            </div>#}
+{#                        </div>#}
+        <input type="submit" value="onsave" />
+    </form>
+
+</div>
+
+{% endblock %}

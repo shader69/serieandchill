@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{%  load static i18n %}
+
+{% block content %}
+
+    <!-- Page Content -->
+    <div class="container serie-detail">
+        <!-- Page Features -->
+        <div class="row" style="width: 100%; display: block; text-align: center">
+            <div class="card h-100">
+                <div class="card-body">
+                    <!-- comments container -->
+                    <div class="comment_block">
+
+                        <form method="post" action="" enctype="multipart/form-data">
+                            {% csrf_token %}
+
+                            <div style="display:none">{{ form.serie }}{{ form.creator }}{{ form.postdate }}</div>
+                            Note : {{ form.rate }}/ 5
+
+                            {% for error in form.rate.errors %}
+                              <span style="color: red">{{ error }}</span>
+                            {% endfor %}
+
+                            <div class="create_new_comment">
+                                <div class="input_comment">
+                    {#              <input type="text" placeholder="{% trans 'Write a comment' %}...">#}
+                                    {{ form.content }}
+                                </div>
+                            </div>
+
+                            <input type="submit" value="{% trans 'Save' %}" class="log-btn"/>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
