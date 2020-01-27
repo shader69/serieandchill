@@ -7,6 +7,18 @@ body {
   padding-top: 56px;
 }
 
+
+@media (max-width: 1200px){
+  .lg-mask{
+    display:none;
+  }
+
+  .log-btn {
+    font-size: 0.6em!important;
+    margin-top: 5px!important;
+  }
+}
+
 .log-btn {
   border-radius: .25rem;
   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
@@ -16,6 +28,8 @@ body {
   font-weight: bold;
   text-transform: uppercase;
   padding: .5rem 1rem;
+  font-size: 0.8em;
+  margin-top: 2px;
 }
 
 .log-btn:hover {
@@ -43,6 +57,23 @@ body {
 
 nav {
   margin-bottom: 24px;
+}
+
+#change-lang select{
+  background: #343a40!important;
+  color: rgba(255,255,255,.5);
+  border: none;
+  cursor: pointer;
+}
+
+#change-lang select:hover{
+  color: rgba(255,255,255,.75);
+}
+
+#change-lang select option{
+  background: white!important;
+  font-weight: 400;
+  color: #212529;
 }
 
 .serie-card figure{
@@ -158,6 +189,7 @@ nav form input[type=text] {
   padding: 5px;
   font-size: 17px;
   border: none;
+  width: 150px;
 }
 
 nav form button {

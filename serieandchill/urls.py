@@ -21,7 +21,6 @@ from django.conf.urls.static import static
 from django.conf import settings
 
 from app.views.index import IndexView
-# from django.contrib.auth import views as auth_views
 from app.views.login import LoggedView
 from app.views.registration import create_user as SignupView
 from app.views.registration import edit_password as PasswordchangeView
@@ -34,6 +33,8 @@ from app.views.nationality import NationalityView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('i18n/', include('django.conf.urls.i18n')),
+
     # path('login/', auth_views.LoginView, {'template_name': 'registration/login.html'}, name='login'),
     # path('logout/', auth_views.LogoutView, name='logout'),
 ]

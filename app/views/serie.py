@@ -1,3 +1,6 @@
+from audioop import reverse
+
+from django.http import HttpResponseRedirect
 from django.shortcuts import render, redirect
 from django.views.generic import ListView
 from django.views.generic.edit import FormMixin
@@ -44,20 +47,25 @@ def create_comment(request):
     user_id = request.user.id
     serie_id = request.GET.get('serie_id')
 
-    if serie_id != None:
-        form = CommentCreationForm(request.POST or None,
-                                   initial={'serie': serie_id,
-                                            'content': 'Ecrivez un commentaire...',
-                                            'rate': '1',
-                                            'creator': user_id})
-        if form.is_valid():
-            form.save()
-            return redirect('app_serie_title', title=serie_id)
+    if user_id != None:
+        if serie_id != None:
+            form = CommentCreationForm(request.POST or None,
+                                       initial={'serie': serie_id,
+                                                'content': 'Ecrivez un commentaire...',
+                                                'rate': '1',
+                                                'creator': user_id})
+            if form.is_valid():
+                form.save()
+                #return redirect('app_serie_title', title=serie_id)
+                #return HttpResponseRedirect(request.META.get('HTTP_REFERER'))
+                return redirect('app_index')
 
+        else:
+            return redirect('app_index')
+
+        context = {
+            'form': form
+        }
+        return render(request, "create_comment.html", context)
     else:
-        return redirect('app_index')
-
-    context = {
-        'form': form
-    }
-    return render(request, "create_comment.html", context)
+        return redirect('login')

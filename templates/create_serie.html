@@ -3,22 +3,75 @@
 
 {% block content %}
 
-<!-- comments container -->
-<div class="comment_block">
-
-    <form method="post" action="" enctype="multipart/form-data">
-        {% csrf_token %}
-        {{ form.as_p }}
-{#                        <!-- used by #{user} to create a new comment -->#}
-{#                        <div class="create_new_comment">#}
-{#                            <!-- the input field -->#}
-{#                            <div class="input_comment">#}
-{#                                <input type="text" placeholder="{% trans 'Write a comment' %}...">#}
+    <!-- Page Content -->
+    <div class="container serie-detail">
+        <!-- Page Features -->
+        <div class="row" style="width: 100%; display: block; text-align: center">
+            <div class="card h-100">
+                <div class="card-body">
+                    <!-- comments container -->
+                    <div class="comment_block" style="width:80%">
+{##}
+{#                        <form method="post" action="" enctype="multipart/form-data">#}
+{#                            {% csrf_token %}#}
+{##}
+{#                            <div style="display:none">{{ form.serie }}{{ form.creator }}{{ form.postdate }}</div>#}
+{#                            Note : {{ form.rate }}/ 5#}
+{##}
+{#                            {% for error in form.rate.errors %}#}
+{#                              <span style="color: red">{{ error }}</span>#}
+{#                            {% endfor %}#}
+{##}
+{#                            <div class="create_new_comment">#}
+{#                                <div class="input_comment">#}
+{#                                    {{ form.content }}#}
+{#                                </div>#}
 {#                            </div>#}
-{#                        </div>#}
-        <input type="submit" value="onsave" />
-    </form>
+{##}
+{#                            <input type="submit" value="{% trans 'Save' %}" class="log-btn"/>#}
+{#                        </form>#}
+{#                    #}
 
-</div>
+                        <form method="post" action="" enctype="multipart/form-data">
+                        {% csrf_token %}
+{#                        {{ form.as_p }}#}
+                            <table style="width:100%">
+                                <tr>
+                                    <td colspan="2">{% trans "Title" %} :<br>{{ form.title }}</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">{% trans "Description" %} :<br>{{ form.description }}</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">{% trans "Rate" %} :<br>{{ form.rate }}</td>
+                                </tr>
+                                <tr>
+                                    <td>{% trans "Director" %} :<br>{{ form.director }}</td>
+                                    <td>{% trans "Actors" %} :<br>{{ form.actor }}</td>
+                                </tr>
+                                <tr>
+                                    <td>{% trans "Episode(s)" %} :<br>{{ form.epNumb }}</td>
+                                    <td>{% trans "Season(s)" %} :<br>{{ form.seasonNumb }}</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">{% trans "Release" %} :<br>{{ form.release }}</td>
+                                </tr>
+                                <tr>
+                                    <td>{% trans "Nationality" %} :<br>{{ form.nationalite }}</td>
+                                    <td>{% trans "Categories" %} :<br>{{ form.categories }}</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">{% trans "Photo" %} :<br>{{ form.photo }}</td>
+                                </tr>
+                            </table>
+                            <br>
+                            <input type="submit" value="Save" />
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 {% endblock %}

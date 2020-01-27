@@ -11,6 +11,8 @@
 {#            {% if object.title in request.GET.title %}#}
                 {% include "included/seriegrid.html" %}
 {#            {% endif %}#}
+        {% empty %}
+            <p style="margin: auto; padding:350px 0 374px 0; font-weight: bold">{% trans 'Sorry, no series found' %}.</p>
         {% endfor %}
     </div>
     <!-- /.row -->

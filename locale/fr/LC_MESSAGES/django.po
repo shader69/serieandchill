@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-03 14:32+0100\n"
+"POT-Creation-Date: 2020-01-27 10:42+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,138 +18,189 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: .\serieandchill\settings.py:136
+#: serieandchill/settings.py:136
 msgid "English"
 msgstr ""
 
-#: .\serieandchill\settings.py:137
+#: serieandchill/settings.py:137
 msgid "French"
 msgstr ""
 
-#: .\templates\base.html:37
-#: .\templates\registration\password_reset_done.html:23
+#: templates/base.html:37 templates/registration/password_reset_done.html:23
 msgid "Home"
 msgstr "Accueil"
 
-#: .\templates\base.html:42 .\templates\category.html:10
+#: templates/base.html:42 templates/category.html:10
 msgid "Category"
 msgstr "Catégorie"
 
-#: .\templates\base.html:45 .\templates\nationality.html:10
-#: .\templates\serie.html:20
+#: templates/base.html:45 templates/create_serie.html:60
+#: templates/nationality.html:10 templates/serie.html:20
 msgid "Nationality"
 msgstr "Nationalité"
 
-#: .\templates\base.html:49
+#: templates/base.html:49
 msgid "Search"
 msgstr "Recherche"
 
-#: .\templates\base.html:55
+#: templates/base.html:55
 msgid "Hi"
 msgstr "Bonjour"
 
-#: .\templates\base.html:58 .\templates\registration\homepage.html:36
-#: .\templates\registration\login.html:14
+#: templates/base.html:58 templates/registration/homepage.html:36
+#: templates/registration/login.html:14
 msgid "My account"
 msgstr "Mon compte"
 
-#: .\templates\base.html:61 .\templates\registration\homepage.html:38
-#: .\templates\registration\login.html:21
+#: templates/base.html:61 templates/registration/homepage.html:38
+#: templates/registration/login.html:21
 msgid "Logout"
 msgstr "Déconnexion"
 
-#: .\templates\base.html:65 .\templates\registration\edit_profile.html:44
-#: .\templates\registration\homepage.html:55
-#: .\templates\registration\login.html:58
-#: .\templates\registration\password_change_done.html:16
-#: .\templates\registration\password_change_form.html:46
+#: templates/base.html:65 templates/registration/edit_profile.html:44
+#: templates/registration/homepage.html:55 templates/registration/login.html:58
+#: templates/registration/password_change_done.html:16
+#: templates/registration/password_change_form.html:46
 msgid "Login"
 msgstr "Connexion"
 
-#: .\templates\create_comment.html:32
-#: .\templates\registration\create_user.html:35
-#: .\templates\registration\edit_profile.html:32
-#: .\templates\registration\password_change_form.html:32
+#: templates/create_comment.html:32 templates/registration/create_user.html:35
+#: templates/registration/edit_profile.html:32
+#: templates/registration/password_change_form.html:32
 msgid "Save"
 msgstr "Enregistrer"
 
-#: .\templates\index.html:12
+#: templates/create_serie.html:40
+msgid "Title"
+msgstr ""
+
+#: templates/create_serie.html:43
+msgid "Description"
+msgstr "Description"
+
+#: templates/create_serie.html:46 templates/serie.html:24
+#: templates/serie.html:75
+msgid "Rate"
+msgstr "Note"
+
+#: templates/create_serie.html:49
+msgid "Director"
+msgstr "Directeur"
+
+#: templates/create_serie.html:50
+msgid "Actors"
+msgstr "Acteurs"
+
+#: templates/create_serie.html:53 templates/serie.html:44
+msgid "Episode(s)"
+msgstr "Episode(s)"
+
+#: templates/create_serie.html:54 templates/serie.html:40
+msgid "Season(s)"
+msgstr "Saison(s)"
+
+#: templates/create_serie.html:57
+msgid "Release"
+msgstr "Date de parution"
+
+#: templates/create_serie.html:61
+msgid "Categories"
+msgstr "Catégories"
+
+#: templates/create_serie.html:64
+msgid "Photo"
+msgstr "Photo"
+
+#: templates/index.html:10
+msgid "A Warm Welcome"
+msgstr "Bienvenue"
+
+#: templates/index.html:11
+msgid ""
+"Welcome to my website. You can access the different series summary sheets, "
+"log in to add series and comment on them. Good visit"
+msgstr ""
+"Bienvenue sur mon site web. Vous pouvez accéder aux différentes fiches "
+"récapitulatives des séries, vous connecter pour ajouter des séries et les "
+"commenter. Bonne visite"
+
+#: templates/index.html:12
 msgid "Add a serie"
 msgstr "Ajouter une série"
 
-#: .\templates\registration\create_user.html:9
-#: .\templates\registration\login.html:66
+#: templates/registration/create_user.html:9
+#: templates/registration/login.html:66
 msgid "Sign up !"
 msgstr "Inscrivez vous !"
 
-#: .\templates\registration\create_user.html:13
+#: templates/registration/create_user.html:13
 msgid "An error is present in your form. Please try again."
 msgstr ""
 "Une erreur est présente dans votre formulaire. Merci d'essayer à nouveau."
 
-#: .\templates\registration\edit_profile.html:43
-#: .\templates\registration\homepage.html:54
-#: .\templates\registration\password_change_done.html:15
-#: .\templates\registration\password_change_form.html:45
+#: templates/registration/edit_profile.html:43
+#: templates/registration/homepage.html:54
+#: templates/registration/password_change_done.html:15
+#: templates/registration/password_change_form.html:45
 msgid "You are not logged in."
 msgstr "Vous n'êtes pas connecté."
 
-#: .\templates\registration\homepage.html:31
+#: templates/registration/homepage.html:31
 msgid "Username"
 msgstr "Nom d'utilisateur"
 
-#: .\templates\registration\homepage.html:32
+#: templates/registration/homepage.html:32
 msgid "Email"
 msgstr "Email"
 
-#: .\templates\registration\homepage.html:33
+#: templates/registration/homepage.html:33
 msgid "Firstname"
 msgstr "Prénom"
 
-#: .\templates\registration\homepage.html:34
+#: templates/registration/homepage.html:34
 msgid "Lastname"
 msgstr "Nom"
 
-#: .\templates\registration\homepage.html:37
+#: templates/registration/homepage.html:37
 msgid "Change my password"
 msgstr "Modifier mon mot de passe"
 
-#: .\templates\registration\login.html:10
+#: templates/registration/login.html:10
 msgid "You are already connected"
 msgstr "Vous êtes déja connecté."
 
-#: .\templates\registration\login.html:30
+#: templates/registration/login.html:30
 msgid "Login to continue"
 msgstr "Connectez vous pour continuer"
 
-#: .\templates\registration\login.html:34
+#: templates/registration/login.html:34
 msgid "Your username and password didn't match. Please try again."
 msgstr ""
 "Votre nom d'utilisateur et mot de passe ne correspondent pas. Merci "
 "d'essayer à nouveau."
 
-#: .\templates\registration\login.html:37
+#: templates/registration/login.html:37
 msgid "Valid username is required"
 msgstr "Un nom d'utilisateur valide est requis"
 
-#: .\templates\registration\login.html:45
+#: templates/registration/login.html:45
 msgid "Password is required"
 msgstr "Mot de passe requis"
 
-#: .\templates\registration\login.html:64
+#: templates/registration/login.html:64
 msgid "Dont have an account ?"
 msgstr "Vous n'avez pas de compte ?"
 
-#: .\templates\registration\login.html:73
-#: .\templates\registration\password_reset_form.html:9
+#: templates/registration/login.html:73
+#: templates/registration/password_reset_form.html:9
 msgid "Forgot password ?"
 msgstr "Mot de passe oublié ?"
 
-#: .\templates\registration\password_reset_done.html:9
+#: templates/registration/password_reset_done.html:9
 msgid "Password reset message sent"
 msgstr "Message de réinitialisation du mot de passe envoyé"
 
-#: .\templates\registration\password_reset_done.html:14
+#: templates/registration/password_reset_done.html:14
 msgid ""
 "We’ve emailed you the instructions for changing your password, as long as an "
 "account exists with the address you specified. You should receive this "
@@ -162,47 +213,39 @@ msgstr ""
 "pas de message, vérifiez que vous avez saisi l’adresse avec laquelle vous "
 "vous êtes enregistré et contrôlez votre dossier de pourriels."
 
-#: .\templates\registration\password_reset_form.html:13
+#: templates/registration/password_reset_form.html:13
 msgid "Your email doesn't match. Please try again."
 msgstr "Votre email ne correspond pas. Merci d'essayer à nouveau."
 
-#: .\templates\registration\password_reset_form.html:16
+#: templates/registration/password_reset_form.html:16
 msgid "Valid email is required"
 msgstr "Un email valide est requis"
 
-#: .\templates\registration\password_reset_form.html:34
+#: templates/registration/password_reset_form.html:34
 msgid "Send"
 msgstr "Envoyer"
 
-#: .\templates\serie.html:19
+#: templates/search.html:15
+msgid "Sorry, no series found"
+msgstr "Désolé, aucune série trouvée"
+
+#: templates/serie.html:19
 msgid "Gender"
 msgstr "Genre"
 
-#: .\templates\serie.html:21
+#: templates/serie.html:21
 msgid "Of"
 msgstr "De"
 
-#: .\templates\serie.html:22
+#: templates/serie.html:22
 msgid "With"
 msgstr "Avec"
 
-#: .\templates\serie.html:24 .\templates\serie.html:75
-msgid "Rate"
-msgstr "Note"
-
-#: .\templates\serie.html:36
+#: templates/serie.html:36
 msgid "Since"
 msgstr "Depuis"
 
-#: .\templates\serie.html:40
-msgid "Season(s)"
-msgstr "Saison(s)"
-
-#: .\templates\serie.html:44
-msgid "Episode(s)"
-msgstr "Episode(s)"
-
-#: .\templates\serie.html:60
+#: templates/serie.html:60
 msgid "Write a comment"
 msgstr "Ecrivez un commentaire"
 
@@ -214,9 +257,6 @@ msgstr "Ecrivez un commentaire"
 
 #~ msgid "See more"
 #~ msgstr "Voir la fiche"
-
-#~ msgid "Categories"
-#~ msgstr "Catégories"
 
 #~ msgid "Services"
 #~ msgstr "Services"
