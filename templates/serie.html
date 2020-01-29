@@ -71,6 +71,13 @@
                                     <ul>
                                         <li><i class="fa fa-pencil"></i><span>{{ object.creator }}</span></li>
                                         <li><i class="fa fa-calendar"></i><span>{{ object.postdate }}</span></li>
+                                        {% if object.creator.id == user.id %}
+                                            <li>
+                                                <a href="{% url 'app_comment_delete' %}?comment_id={{ object.id }}">
+                                                    <i class="fa fa-trash-o" style="color:red; font-weight: bold;"></i>
+                                                </a>
+                                            </li>
+                                        {% endif %}
                                         <li>
                                             <span class="info">{% trans "Rate" %} : </span>{{ object.rate }}/5
                                             <i class="fa fa-star {% if object.rate >= 1 %}checked{% endif %}"></i>

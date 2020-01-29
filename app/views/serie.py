@@ -69,3 +69,21 @@ def create_comment(request):
         return render(request, "create_comment.html", context)
     else:
         return redirect('login')
+
+
+def delete_comment(request):
+    user_id = request.user.id
+    comment_id = request.GET.get('comment_id')
+
+    if user_id != None:
+        if comment_id != None:
+            query = Comment.objects.get(id=comment_id)
+            query.delete()
+            # return redirect('app_serie_nationality')
+            return HttpResponseRedirect(request.META.get('HTTP_REFERER', '/'))
+
+        else:
+            return redirect('app_index')
+
+    else:
+        return redirect('app_index')

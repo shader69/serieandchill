@@ -27,7 +27,7 @@ from app.views.registration import edit_password as PasswordchangeView
 from app.views.registration import edit_profile as ProfilechangeView
 from app.views.category import CategorieView
 from app.views.search import SearchView
-from app.views.serie import SerieView, create_serie as CreateserieView, create_comment as CreatecommentView
+from app.views.serie import SerieView, create_serie as CreateserieView, create_comment as CreatecommentView, delete_comment as DeletecommentView
 from app.views.nationality import NationalityView
 
 
@@ -56,4 +56,5 @@ urlpatterns += i18n_patterns(
     path('serie/<str:title>', SerieView.as_view(), name='app_serie_title'),
     path('createserie', CreateserieView, name='app_serie_create'),
     path('createcomment', CreatecommentView, name='app_comment_create'),
+    path('deletecomment', DeletecommentView, name='app_comment_delete'),
 ) + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
