@@ -1,24 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c6eff261-b4a8-4c4b-8f37-e7227a98a020" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/forms/create_comment.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/forms/create_serie.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/create_comment.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/create_serie.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4714a235-6c4f-431a-a86d-e6b523ee13b8.xml" beforeDir="false" />
+    <list default="true" id="c6eff261-b4a8-4c4b-8f37-e7227a98a020" name="Default Changelist" comment="categorie">
+      <change afterPath="$PROJECT_DIR$/.gitattribute" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/serieandchill.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/serieandchill.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/serie.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/serie.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale/en/LC_MESSAGES/django.po" beforeDir="false" afterPath="$PROJECT_DIR$/locale/en/LC_MESSAGES/django.po" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale/fr/LC_MESSAGES/django.mo" beforeDir="false" afterPath="$PROJECT_DIR$/locale/fr/LC_MESSAGES/django.mo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale/fr/LC_MESSAGES/django.po" beforeDir="false" afterPath="$PROJECT_DIR$/locale/fr/LC_MESSAGES/django.po" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/serieandchill/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/serieandchill/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/heroic-features.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/heroic-features.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/serie.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/serie.html" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -108,18 +96,6 @@
       <recent name="C:\Users\klliteras\PycharmProjects\serieandchill\templates\login" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
   <component name="RunManager">
     <configuration name="venv" type="Python.DjangoServer" factoryName="Django server">
       <module name="serieandchill" />
@@ -129,7 +105,7 @@
         <env name="PYTHONUNBUFFERED" value="1" />
         <env name="DJANGO_SETTINGS_MODULE" value="serieandchill.settings" />
       </envs>
-      <option name="SDK_HOME" value="C:\Users\klliteras\PycharmProjects\untitled\venv\Scripts\python.exe" />
+      <option name="SDK_HOME" value="D:\Programmes\JetBrains\PyCharm 2019.3\venv\Scripts\python.exe" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -145,6 +121,18 @@
       <option name="customRunCommand" value="" />
       <method v="2" />
     </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -166,6 +154,7 @@
       <workItem from="1577122640873" duration="7869000" />
       <workItem from="1577694334234" duration="20740000" />
       <workItem from="1578044052970" duration="12607000" />
+      <workItem from="1580284767411" duration="2743000" />
     </task>
     <task id="LOCAL-00001" summary="add imagefield">
       <created>1576077745582</created>
@@ -202,7 +191,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577462438229</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="[ADD] gitignore">
+      <created>1580217376608</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1580217376608</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -227,29 +223,30 @@
     <MESSAGE value="add translation" />
     <MESSAGE value="[ADD] signup form&#10;[ADD] password change form&#10;[ADD] password reset form&#10;[ADD] profile edit form (in progress)" />
     <MESSAGE value="[ADD] comments view in serie" />
-    <option name="LAST_COMMIT_MESSAGE" value="[ADD] comments view in serie" />
+    <MESSAGE value="[ADD] gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="[ADD] gitignore" />
   </component>
   <component name="WindowStateProjectService">
     <state x="345" y="144" key="#Inspections" timestamp="1576528046591">
       <screen x="0" y="0" width="1504" height="972" />
     </state>
     <state x="345" y="144" key="#Inspections/0.0.1504.972@0.0.1504.972" timestamp="1576528046591" />
-    <state x="208" y="141" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1577205824279">
+    <state x="208" y="141" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580217403838">
       <screen x="0" y="0" width="1504" height="972" />
     </state>
-    <state x="208" y="141" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1504.972@0.0.1504.972" timestamp="1577205824279" />
-    <state x="510" y="289" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1577123205100">
+    <state x="208" y="141" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1504.972@0.0.1504.972" timestamp="1580217403838" />
+    <state x="510" y="289" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1580292328336">
       <screen x="0" y="0" width="1504" height="972" />
     </state>
-    <state x="510" y="289" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1504.972@0.0.1504.972" timestamp="1577123205100" />
+    <state x="510" y="289" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1504.972@0.0.1504.972" timestamp="1580292328336" />
     <state x="473" y="93" key="#venv" timestamp="1577205551664">
       <screen x="0" y="0" width="1504" height="972" />
     </state>
     <state x="473" y="93" key="#venv/0.0.1504.972@0.0.1504.972" timestamp="1577205551664" />
-    <state x="377" y="80" key="CommitChangelistDialog2" timestamp="1576530332793">
+    <state x="377" y="80" key="CommitChangelistDialog2" timestamp="1580292403149">
       <screen x="0" y="0" width="1504" height="972" />
     </state>
-    <state x="377" y="80" key="CommitChangelistDialog2/0.0.1504.972@0.0.1504.972" timestamp="1576530332793" />
+    <state x="377" y="80" key="CommitChangelistDialog2/0.0.1504.972@0.0.1504.972" timestamp="1580292403149" />
     <state x="532" y="240" key="FileChooserDialogImpl" timestamp="1576524636283">
       <screen x="0" y="0" width="1504" height="972" />
     </state>
@@ -270,26 +267,26 @@
       <screen x="0" y="0" width="1504" height="972" />
     </state>
     <state width="1461" height="245" key="GridCell.Tab.0.right/0.0.1504.972@0.0.1504.972" timestamp="1577213246920" />
-    <state x="254" y="128" key="SettingsEditor" timestamp="1577205818458">
+    <state x="254" y="128" key="SettingsEditor" timestamp="1580217411160">
       <screen x="0" y="0" width="1504" height="972" />
     </state>
-    <state x="254" y="128" key="SettingsEditor/0.0.1504.972@0.0.1504.972" timestamp="1577205818458" />
-    <state x="345" y="219" key="Vcs.Push.Dialog.v2" timestamp="1576530282809">
+    <state x="254" y="128" key="SettingsEditor/0.0.1504.972@0.0.1504.972" timestamp="1580217411160" />
+    <state x="345" y="219" key="Vcs.Push.Dialog.v2" timestamp="1580292411432">
       <screen x="0" y="0" width="1504" height="972" />
     </state>
-    <state x="345" y="219" key="Vcs.Push.Dialog.v2/0.0.1504.972@0.0.1504.972" timestamp="1576530282809" />
-    <state x="449" y="310" key="com.intellij.ide.util.TipDialog" timestamp="1577122643116">
+    <state x="345" y="219" key="Vcs.Push.Dialog.v2/0.0.1504.972@0.0.1504.972" timestamp="1580292411432" />
+    <state x="449" y="310" key="com.intellij.ide.util.TipDialog" timestamp="1580284769248">
       <screen x="0" y="0" width="1504" height="972" />
     </state>
-    <state x="449" y="310" key="com.intellij.ide.util.TipDialog/0.0.1504.972@0.0.1504.972" timestamp="1577122643116" />
+    <state x="449" y="310" key="com.intellij.ide.util.TipDialog/0.0.1504.972@0.0.1504.972" timestamp="1580284769248" />
     <state x="562" y="403" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1576869684473">
       <screen x="0" y="0" width="1504" height="972" />
     </state>
     <state x="562" y="403" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1504.972@0.0.1504.972" timestamp="1576869684473" />
-    <state x="473" y="277" key="git4idea.merge.GitPullDialog" timestamp="1577205516972">
+    <state x="473" y="277" key="git4idea.merge.GitPullDialog" timestamp="1580217331000">
       <screen x="0" y="0" width="1504" height="972" />
     </state>
-    <state x="473" y="277" key="git4idea.merge.GitPullDialog/0.0.1504.972@0.0.1504.972" timestamp="1577205516972" />
+    <state x="473" y="277" key="git4idea.merge.GitPullDialog/0.0.1504.972@0.0.1504.972" timestamp="1580217331000" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
