@@ -72,14 +72,12 @@ def create_comment(request):
 
 
 def delete_comment(request):
-    user_id = request.user.id
     comment_id = request.GET.get('comment_id')
+    query = Comment.objects.get(id=comment_id)
 
-    if user_id != None:
-        if comment_id != None:
-            query = Comment.objects.get(id=comment_id)
+    if comment_id != None:
+        if request.user.id == query.creator.id:
             query.delete()
-            # return redirect('app_serie_nationality')
             return HttpResponseRedirect(request.META.get('HTTP_REFERER', '/'))
 
         else:
