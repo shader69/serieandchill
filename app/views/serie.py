@@ -36,6 +36,7 @@ def create_serie(request):
     if form.is_valid():
         form.photo = request.FILES['photo']
         form.save()
+        return redirect('app_index')
 
     context = {
         'form': form
